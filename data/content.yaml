@@ -4,14 +4,17 @@ Profile:
   Photo: img/avatar.jpg
   Line: Software Developer
   Contacts:
-    - Icon: fas fa-phone
-      Info: +44 123 456 789
-    - Icon: fas fa-envelope
-      Info: contact@ines-almeida.com
-    - Icon: fas fa-globe
-      Info: <a class="contact__link" href="https://ines-almeida.com" target="_blank">ines-almeida.com</a>
-    - Icon: fas fa-map-marker-alt
-      Info: Portugal
+    - Icon: fa-solid fa-phone
+      Info: +91 9975934619
+    - Icon: fa-regular fa-envelope
+      Info: <a class="contact__link"  target="_blank" href="mailto:sumitmangela@gmail.com">sumitmangela@gmail.com</a>
+    - Icon: fa-solid fa-location-dot
+      Info: Mumbai, India
+  ProfContacs:
+    - Icon: fa-brands fa-linkedin
+      Info: <a class="contact__link"  target="_blank" href="https://linkedin.com/in/sumit-mangela">linkedin.com/in/sumit-mangela</a>
+    - Icon: fa-brands fa-github
+      Info: <a class="contact__link"  target="_blank" href="https://github.com/sumitmangela">github.com/sumitmangela</a>
 
 Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 

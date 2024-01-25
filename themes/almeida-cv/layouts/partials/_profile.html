@@ -1,12 +1,12 @@
 {{ if .Profile }}
-    <div class="profile">
+    <div class="profile section">
         <div class="profile__container">
             {{ if .Profile.Photo }}
             <img class="profile__img" src="{{ .Profile.Photo }}" alt="photo of me">
             {{ end }}
             <div class="profile__details">
                 <h1 class="mainHeading">{{ .Profile.FirstName }} <span>{{ .Profile.LastName }}</span></h1>
-                <div class="profile__line"> {{ .Profile.Line }} </div>
+                <h2 class="subHeading"> {{ .Profile.Line }} </h2>
             </div>
         </div>
     </div>

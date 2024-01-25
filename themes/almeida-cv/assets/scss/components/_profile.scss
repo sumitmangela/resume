@@ -1,16 +1,19 @@
 .profile {
-    width: 100%;
-    height: $width-right-col - 6rem;
-    position: relative;
-    overflow: hidden;
-
     &__container {
         display: flex;
+        justify-content: center;
     }
 
     &__img {
         width: auto;
-        height: 150px;
+        height: 200px;
         border-radius: 50%;
+    }
+
+    &__details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2rem;
     }
 }
