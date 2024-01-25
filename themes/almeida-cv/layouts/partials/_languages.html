@@ -1,9 +1,9 @@
 {{ if .Languages }}
-<div class="sideSection">
-    <div class="sideSection__heading">
-        <h2 class="sideSection__title">{{ i18n "languages" }}</h2>
+<div id="languages" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">{{ i18n "languages" }}</h2>
     </div>
-    <div class="sideSection__content">
+    <div class="section__content">
         <ul class="language">
             {{ range .Languages }}
             <li class="language__item">

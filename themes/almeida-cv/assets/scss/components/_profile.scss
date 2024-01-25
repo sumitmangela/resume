@@ -1,0 +1,16 @@
+.profile {
+    width: 100%;
+    height: $width-right-col - 6rem;
+    position: relative;
+    overflow: hidden;
+
+    &__container {
+        display: flex;
+    }
+
+    &__img {
+        width: auto;
+        height: 150px;
+        border-radius: 50%;
+    }
+}

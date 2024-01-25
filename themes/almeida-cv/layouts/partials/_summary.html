@@ -1,0 +1,10 @@
+{{ if .Summary }}
+<div id="profile" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">{{ i18n "summary" }}</h2>
+    </div>
+    <div class="section__content">
+        <p>{{ .Summary | safeHTML | emojify }}</p>
+    </div>
+</div>
+{{ end }}

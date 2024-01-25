@@ -1,7 +1,7 @@
-{{ if .BasicInfo.Contacts }}
-<div class="sideSection contact">
+{{ if .Profile.Contacts }}
+<div id="contact" class="contact section">
     <ul>
-        {{ range .BasicInfo.Contacts }}
+        {{ range .Profile.Contacts }}
         <li class="contact__item">
             <i class="{{ .Icon }}"></i><span>{{ .Info | safeHTML }}</span>
         </li>
