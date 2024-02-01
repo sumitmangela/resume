@@ -39,29 +39,30 @@ Experience:
           - Sed viverra tellus in hac.
           - Lorem ipsum dolor sit amet, consectetur adipiscing elit
         Badges: ['Python', 'BDD', 'Selenium', 'OOP', 'Agile']
-  - Employer: Another super cool company
-    Place: Lisbon, PT
+  - Employer: Blackstraw.ai
+    From: '2023-02-07T08:30:00Z'
+    To: "2024-01-30"
     Positions:
-      - Title: Flow Cytometry Resource Specialist
-        Date: Jan 2018 - Mar 2019
-        Details:
-          - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-          - Nisl tincidunt eget nullam non nisi est
-          - Sed viverra tellus in hac.
-          - Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        Badges: ['Python', 'HTML', 'CSS', 'C#/Unity']
-  - Employer: Institute of Neural Engineering
-    Place: Graz, AT
-    Class: "experience__extra_padding"
+      - Title: Senior Software Developer
+        From: "2023-10-15"
+        To: "2024-01-30"
+        Location: Mumbai, India | Remote
+      - Title: Software Developer
+        From: "2020-11-15"
+        To: "2023-10-14"
+        Location: Mumbai, India | Remote
+      - Title: Front End Developer
+        From: "2020-11-15"
+        To: "2019-06-24"
+        Location: Mumbai, India
+  - Employer: GS Tecknoserve Pvt. Ltd.
+    From: '2023-02-07T08:30:00Z'
+    To: "2019-06-15"
     Positions:
-      - Title: Master's Thesis Research Intern
-        Date: Oct 2016 - Jun 2017
-        Details:
-          - Arcu vitae elementum curabitur vitae nunc sed velit
-          - Viverra aliquet eget sit amet tellus cras adipiscing
-          - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-          - Nisl tincidunt eget nullam non nisi est
-        Badges: ['Python', 'MATLAB', 'Data Processing', 'Paradigm Design']
+      - Title: Front End Developer/ UI Developer 
+        From: "2017-08-01"
+        To: "2019-06-15"
+        Location: Mumbai, India | Remote
 
 Education:
   - Course: BSc & MSc in Biomedical Engineering and Biophysics

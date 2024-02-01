@@ -1,0 +1,38 @@
+
+{{ $hideDetails := cond (eq .hideDetails true ) true false }}
+
+{{ $from := .from | time }}
+{{ $to := cond (eq .to "" ) time.Now .to | time }}
+
+{{ $from_detail := .from | time.Format "Jan 2006" }}
+{{ $to_detail := "Present" }}
+{{ if ne .to "" }}
+    {{ $to_detail = .to | time.Format "Jan 2006" }}
+{{ end }}
+
+
+{{ $diff := $to.Sub $from }}
+{{ $tmonths:= mul ($to.Sub $from).Hours 0.00139 }}
+{{ $months := mod $tmonths 12 }}
+{{ $years := math.Floor (div $tmonths 12)}}
+
+{{ $measure_year := cond (eq 1 $years) "year" "years" }}
+{{ $measure_month := cond (eq 1 $months) "month" "months" }}
+
+{{ if ne $hideDetails true }}
+    <span class="timeline__detail">
+        {{ $from_detail }} - {{ $to_detail }}
+    </span>
+    · 
+{{ end }}
+
+<span class="timeline__diff">
+    {{ if gt $years 0 }}
+        {{ $years }} {{ $measure_year }}
+    {{ end }}
+
+    {{ if gt $months 0 }}
+        {{ $months }} {{ $measure_month }}
+    {{ end }}
+</span>
+

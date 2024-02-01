@@ -4,8 +4,14 @@
         <h2 class="section__title">{{ i18n "experience" }}</h2>
     </div>
     <div class="section__content">
+        {{ if .ExperienceFrom }}
+        <div class="total__experience">
+            {{ partial "_timeline.html" (dict "from" .ExperienceFrom "to" "" "hideDetails" true) }}    
+        </div>
+        {{ end }}
         <div class="experience">
             {{ range .Experience }}
+
             {{ if .Class }}
             <div class="experience__item {{ .Class }}">
             {{ else }}
@@ -13,8 +19,13 @@
             {{ end }}
                 <div class="experience__header">
                     <h3 class="experience__company">
+
                         {{ .Employer | safeHTML }}
+
                     </h3>
+                    <h4>
+                        {{ partial "_timeline.html" (dict "from" .From "to" .To "hideDetails" true) }}
+                    </h4>
                     <h3 class="experience__place">{{ .Place | safeHTML }}</h3>
                 </div>
                 {{ range .Positions }}
@@ -23,6 +34,9 @@
                         <h3 class="experience__position">
                             {{ .Title | safeHTML}}
                         </h3>
+                        <h4>
+                            {{ partial "_timeline.html" (dict "from" .From "to" .To) }}
+                        </h4>
                         <h3 class="experience__date">{{ .Date | safeHTML }}</h3>
                     </div>
                     <ul>

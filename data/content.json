@@ -1,0 +1,192 @@
+{
+    "Date": "2024-01-30",
+    "Profile": {
+      "FirstName": "Sumit",
+      "LastName": "Mangela",
+      "Photo": "img/avatar.jpg",
+      "Line": "Software Developer",
+      "Contacts": [
+        {
+          "Icon": "fa-solid fa-phone",
+          "Info": "+91 9975934619"
+        },
+        {
+          "Icon": "fa-regular fa-envelope",
+          "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"mailto:sumitmangela@gmail.com\">sumitmangela@gmail.com</a>"
+        },
+        {
+          "Icon": "fa-solid fa-location-dot",
+          "Info": "Mumbai, India"
+        }
+      ],
+      "ProfContacs": [
+        {
+          "Icon": "fa-brands fa-linkedin",
+          "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"https://linkedin.com/in/sumit-mangela\">linkedin.com/in/sumit-mangela</a>"
+        },
+        {
+          "Icon": "fa-brands fa-github",
+          "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"https://github.com/sumitmangela\">github.com/sumitmangela</a>"
+        }
+      ]
+    },
+    "Summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "ExperienceFrom":"2017-08-01",
+    "Experience": [
+      {
+        "Employer": "Blackstraw.ai",
+        "From": "2019-06-24",
+        "To": "",
+        "Positions": [
+          {
+            "Title": "Senior Software Developer",
+            "From": "2023-10-02",
+            "To": "",
+            "Location": "Mumbai, India | Remote"
+          },
+          {
+            "Title": "Software Developer",
+            "From": "2020-11-02",
+            "To": "2023-10-01",
+            "Location": "Mumbai, India | Remote"
+          },
+          {
+            "Title": "Front End Developer",
+            "From": "2019-06-16",
+            "To": "2020-11-01",
+            "Location": "Mumbai, India"
+          }
+        ]
+      },
+      {
+        "Employer": "GS Tecknoserve Pvt. Ltd.",
+        "From": "2017-08-01",
+        "To": "2019-06-15",
+        "Positions": [
+          {
+            "Title": "Front End Developer/ UI Developer",
+            "From": "2017-08-01",
+            "To": "2019-06-15",
+            "Location": "Mumbai, India | Remote"
+          }
+        ]
+      }
+    ],
+    "Education": [
+      {
+        "Course": "BSc & MSc in Biomedical Engineering and Biophysics",
+        "Place": "University of Lisbon",
+        "Date": "Sep 2012 - Nov 2017",
+        "Details": "Specialised in data analysis"
+      }
+    ],
+    "References": [
+      {
+        "Name": "Person One",
+        "Relation": "Co-worker at Super Cool Company",
+        "Contacts": [
+          {
+            "Icon": "fas fa-phone",
+            "Info": "+44 123 456 790"
+          },
+          {
+            "Icon": "fas fa-envelope",
+            "Info": "contact@person-one.com"
+          },
+          {
+            "Icon": "fas fa-map-marker-alt",
+            "Info": "Melbourne, Australia"
+          }
+        ]
+      },
+      {
+        "Name": "Person Two",
+        "Relation": "Boss at Super Cool Company",
+        "Contacts": [
+          {
+            "Icon": "fas fa-phone",
+            "Info": "+44 123 456 791"
+          },
+          {
+            "Icon": "fas fa-envelope",
+            "Info": "contact@person-two.com"
+          },
+          {
+            "Icon": "fas fa-map-marker-alt",
+            "Info": "Sydney, Australia"
+          }
+        ]
+      }
+    ],
+    "Skills": [
+      {
+        "Family": "Programming",
+        "Items": [
+          "Python",
+          "HTML (including Jinja)",
+          "Javascript",
+          "CSS",
+          "SASS",
+          "SQL",
+          "C#",
+          "Bash",
+          "MATLAB"
+        ]
+      },
+      {
+        "Family": "Frameworks",
+        "Items": [
+          "Django",
+          "Flask",
+          "Hugo",
+          "React"
+        ]
+      },
+      {
+        "Family": "Developer Tools",
+        "Items": [
+          "Git",
+          "Docker",
+          "Jenkins",
+          "AWS"
+        ]
+      },
+      {
+        "Family": "Misc",
+        "Items": [
+          "Adobe Tools",
+          "LaTeX"
+        ]
+      }
+    ],
+    "Languages": [
+      {
+        "Name": "Portuguese",
+        "Level": "Native"
+      },
+      {
+        "Name": "English",
+        "Level": "C2"
+      },
+      {
+        "Name": "Spanish",
+        "Level": "B1"
+      },
+      {
+        "Name": "German",
+        "Level": "B1"
+      }
+    ],
+    "Diplomas": [
+      "ISTQB Tester Certification (2019)",
+      "English Cambridge CAE (2009)"
+    ],
+    "Interests": [
+      "Bouldering",
+      "Cooking",
+      "Windsurfing",
+      "Bossa Nova",
+      "Design",
+      "Languages"
+    ]
+  }
