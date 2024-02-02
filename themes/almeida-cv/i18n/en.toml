@@ -4,6 +4,9 @@ other = "Summary"
 [experience]
 other = "Experience"
 
+[totalExperience]
+other = "Total Work Experience"
+
 [education]
 other = "Education"
 
