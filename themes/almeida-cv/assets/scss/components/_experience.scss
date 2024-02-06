@@ -47,12 +47,42 @@
         display: flex;
         width: 100%;
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__job__list{
+        list-style-type: none;   
+        margin-left: 5px;
+    }
+    &__job__disc{
+        position: relative;
+        display: block;
+        border-radius: 50%;
+        background-color: $color-secondary;
+        margin-bottom: calc(0.8rem * -1);
+        height: 0.6rem;
+        width: 0.6rem;
+        top: 0.7rem;
+        left: -2rem;
     }
 
     &__job {
         margin-left: 20px;
         margin-bottom: 2rem;
+        position: relative;
+
+        &:not(:last-child) {
+            &::before{
+                content: "";
+                position: absolute;
+                left: -1.8rem;
+                top: 2rem;
+                height: calc(100%);
+                width: 2px;
+                background-color: $color-secondary;
+            }
+        }
+
     }
 
     // &__company,

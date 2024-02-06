@@ -28,26 +28,32 @@
                         {{ partial "_timeline.html" (dict "from" .From "to" .To "hideDetails" true) }}
                     </h4>
                 </div>
-                {{ range .Positions }}
-                <div class="experience__job">
-                    <h3 class="experience__position">
-                        {{ .Title | safeHTML}}
-                    </h3>
-                    <h4 class="experience__date">
-                        {{ partial "_timeline.html" (dict "from" .From "to" .To) }}
-                    </h4>
+                {{ if .Positions }}
+                    <ul class="experience__job__list">
+                        {{ range .Positions }}
+                        <li class="experience__job">
+                            <span class="experience__job__disc"></span>
+                            <h3 class="experience__position">
+                                {{ .Title | safeHTML}}
+                            </h3>
+                            <h4 class="experience__date">
+                                {{ partial "_timeline.html" (dict "from" .From "to" .To) }}
+                            </h4>
 
-                    <h3 class="experience__place">{{ .Location | safeHTML }}</h3>
-                    {{ if .Details }}
-                        <ul class="experience__list">
-                            {{ range .Details }}
-                            <li class="experience__bullet">{{ .Desc | safeHTML }}</li>
+                            <h3 class="experience__place">{{ .Location | safeHTML }}</h3>
+                            {{ if .Details }}
+                                <ul class="experience__list">
+                                    {{ range .Details }}
+                                    <li class="experience__bullet">{{ .Desc | safeHTML }}</li>
+                                    {{ end }}
+                                </ul>
                             {{ end }}
-                        </ul>
-                    {{ end }}
 
-                </div>
+                        </li>
+                        {{ end }}
+                    </ul>
                 {{ end }}
+                
             </div>
             {{ end }}
         </div>
