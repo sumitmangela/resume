@@ -120,42 +120,68 @@
     ],
     "Skills": [
       {
-        "Family": "Programming",
+        "Family": "Front End Development",
+        "Details": [
+
+        ],
         "Items": [
-          "Python",
-          "HTML (including Jinja)",
+          "Angular",
+          "React",
           "Javascript",
+          "Typescript",
+          "RxJs",
+          "HTML",
           "CSS",
-          "SASS",
-          "SQL",
-          "C#",
-          "Bash",
-          "MATLAB"
+          "SASS/SCSS",
+          "Material",
+          "Bootstrap",
+          "Hugo",
+          "Nunjucks"
         ]
       },
       {
-        "Family": "Frameworks",
+        "Family": "Back End Development",
+        "Details": [
+
+        ],
         "Items": [
-          "Django",
+          "NodeJs",
+          "NextJs",
+          "Puppeteer",
+          "Python",
           "Flask",
-          "Hugo",
-          "React"
+          "Postgres",
+          "SQL",
+          "MongoDB"
         ]
       },
       {
         "Family": "Developer Tools",
+        "Details": [
+
+        ],
         "Items": [
           "Git",
+          "BitBucket",
+          "Github",
+          "TortoiseSVN",
+          "Jira",
+          "DBeaver",
+          "WinSCP",
+          "Citrix",
           "Docker",
-          "Jenkins",
-          "AWS"
+          "ActiveMQ"
         ]
       },
       {
         "Family": "Misc",
+        "Details": [
+
+        ],
         "Items": [
-          "Adobe Tools",
-          "LaTeX"
+          "Adobe Photoshop",
+          "Figma",
+          "Adobe XD"
         ]
       }
     ],
