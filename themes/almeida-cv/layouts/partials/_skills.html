@@ -5,17 +5,25 @@
     </div>
     <div class="section__content">
         <ul class="skills">
+            {{ range .Skills }}
             <li>
-                {{ range .Skills }}
+                <span>{{ .Family | safeHTML }}</span>
+                <br>
+
+                <ul class="skills__details">
+                    {{ range .Details }}
+                    <li>{{ . | safeHTML }}</li>
+                    {{ end }}
+                </ul>
                 <ul class="skills__group">
-                    <span>{{ .Family | safeHTML }}</span>
-                    <br>
+                
                     {{ range .Items }}
                     <li>{{ . | safeHTML }}</li>
                     {{ end }}
                 </ul>
-                {{ end }}
+               
             </li>
+            {{ end }}
         </ul>
     </div>
 </div>
