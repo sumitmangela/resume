@@ -1,14 +1,14 @@
-{{ if .Interests }}
-<div id="interests" class="section">
+{{ if .Publications }}
+<div id="publications" class="section">
     <div class="section__heading">
-        <h2 class="section__title">{{ i18n "interests" }}</h2>
+        <h2 class="section__title">{{ i18n "publications" }}</h2>
     </div>
     <div class="section__content">
-        <ul class="interests">
-            {{ range .Interests }}
-            <li  class="interests__item">
+        <ul>
+            {{ range .Publications }}
+            <li>
                 {{ .Name | safeHTML }}
- 
+                <br/>
                 {{ if .Link }}
                     <a class="contact__link" target="_blank" href="{{ .Link }}" >{{ .Link }}</a>
                 {{ end }}
