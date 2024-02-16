@@ -1,12 +1,12 @@
 .profile {
     &__container {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     &__img {
         width: auto;
-        height: 200px;
+        height: 225px;
         border-radius: 50%;
     }
 
