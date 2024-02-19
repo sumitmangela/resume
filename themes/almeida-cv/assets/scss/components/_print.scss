@@ -1,3 +1,8 @@
+.print{
+    margin: 40px auto;
+    text-align: center;
+}
+
 @media print {
     .print {
         display: none;
