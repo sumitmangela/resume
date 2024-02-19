@@ -35,5 +35,7 @@ $pages: {{ .Site.Params.pages | default 1}} !default;
 @import "components/interests";
 @import "components/404";
 @import "components/profile";
+@import "components/pagebreak";
+@import "components/print";
 
 @import "custom";

@@ -18,9 +18,14 @@
         </div>
 
         {{ partial "_education.html" $data }}
+
+        <!-- manually introduce pagebreak for printing -->
+        {{ partial "_pagebreak.html" $data }}
+
         {{ partial "_publications.html" $data }}
         {{ partial "_interests.html" $data }}
 
+        {{ partial "_print.html" $data }}
         </div>
     </div>
 </body>
