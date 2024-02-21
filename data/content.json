@@ -164,11 +164,11 @@
     "Interests": [
       {
         "Name": "Photography",
-        "Link": "https://unsplash.com/@sumitmangela"
+        "Link": ["https://unsplash.com/@sumitmangela", "https://www.instagram.com/sumit_mangela/"]
        },
        {
          "Name": "Digital Art",
-         "Link": "https://www.deviantart.com/sumitmangela"
+         "Link": ["https://www.deviantart.com/sumitmangela", "https://www.instagram.com/art.sumit_mangela/"]
        },
        {
          "Name": "Travel"

@@ -7,10 +7,12 @@
         <ul class="interests">
             {{ range .Interests }}
             <li  class="interests__item">
-                {{ .Name | safeHTML }}
+                <div class="interests__item__title">{{ .Name | safeHTML }}</div> 
  
                 {{ if .Link }}
-                    <a class="contact__link" target="_blank" href="{{ .Link }}" >{{ .Link }}</a>
+                    {{ range .Link }}
+                    <a class="contact__link" target="_blank" href="{{ . }}" >{{ . }}</a> <br/>
+                    {{ end }}
                 {{ end }}
             </li>
             {{ end }}

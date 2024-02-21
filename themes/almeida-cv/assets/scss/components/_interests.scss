@@ -1,12 +1,30 @@
 .interests {
-    display: block;
-    -moz-column-count: 2;
-    column-count: 2;
-    width: 100%;
-    text-align: right;
-    @include avoid-break;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 
-    &__item:nth-child(n+4) {
-        text-align: left;
+    &__item{
+        width: calc(50%);
+        padding-bottom: 5px;
+
+        // .contact__link{
+        //     margin-left:10px
+        // }
+    }
+
+    &__item:nth-child(2n-1) {
+        border-right: 1px solid $color-secondary;
+    }
+    &__item:nth-child(2n) {
+        width: calc(50% - 15px);
+        margin-left: 15px;
+    }
+
+    @media only screen and (max-width: 800px){
+        &__item{
+            width: calc(100%);
+            border-right: none !important;
+            margin-left: 0px !important;
+        }
     }
 }
