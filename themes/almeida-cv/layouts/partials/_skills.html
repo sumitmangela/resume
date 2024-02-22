@@ -7,8 +7,7 @@
         <ul class="skills">
             {{ range .Skills }}
             <li>
-                <span>{{ .Family | safeHTML }}</span>
-                <br>
+                <h3>{{ .Family | safeHTML }}</h3>
 
                 <ul class="skills__details">
                     {{ range .Details }}
@@ -18,7 +17,7 @@
                 <ul class="skills__group">
                 
                     {{ range .Items }}
-                    <li>{{ . | safeHTML }}</li>
+                    <li> <span>{{ . | safeHTML }}</span></li>
                     {{ end }}
                 </ul>
                

@@ -4,7 +4,7 @@
         <h2 class="section__title">{{ i18n "publications" }}</h2>
     </div>
     <div class="section__content">
-        <ul>
+        <ul class="publications__list">
             {{ range .Publications }}
             <li>
                 {{ .Name | safeHTML }}
