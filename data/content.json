@@ -21,12 +21,12 @@
       ],
       "ProfContacs": [
         {
-          "Icon": "fa-brands fa-linkedin",
-          "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"https://linkedin.com/in/sumit-mangela\">linkedin.com/in/sumit-mangela</a>"
-        },
-        {
           "Icon": "fa-brands fa-github",
           "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"https://github.com/sumitmangela\">github.com/sumitmangela</a>"
+        },
+        {
+          "Icon": "fa-brands fa-linkedin",
+          "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"https://linkedin.com/in/sumit-mangela\">linkedin.com/in/sumit-mangela</a>"
         }
       ]
     },

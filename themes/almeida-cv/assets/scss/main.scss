@@ -17,6 +17,8 @@ $color-right-col-icon-background: {{ .Site.Params.colorRightColumnIconBackground
 
 $pages: {{ .Site.Params.pages | default 1}} !default;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
 @import "abstract";
 @import "functions";
 @import "mixins";

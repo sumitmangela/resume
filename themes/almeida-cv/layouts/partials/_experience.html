@@ -5,10 +5,10 @@
     </div>
     <div class="section__content">
         {{ if .ExperienceFrom }}
-        <div class="total__experience">
+        <h3 class="total__experience">
             {{ i18n "totalExperience" }}: 
             <span class="total__experience__timeline">{{ partial "_timeline.html" (dict "from" .ExperienceFrom "to" "" "hideDetails" true) }} </span>
-        </div>
+        </h3>
         {{ end }}
         <div class="experience">
             {{ range .Experience }}
@@ -40,7 +40,7 @@
                                 {{ partial "_timeline.html" (dict "from" .From "to" .To) }}
                             </h4>
 
-                            <h3 class="experience__place">{{ .Location | safeHTML }}</h3>
+                            <h4 class="experience__place">{{ .Location | safeHTML }}</h4>
                             {{ if .Details }}
                                 <ul class="experience__list">
                                     {{ range .Details }}
