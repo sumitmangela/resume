@@ -40,5 +40,6 @@ $pages: {{ .Site.Params.pages | default 1}} !default;
 @import "components/pagebreak";
 @import "components/print";
 @import "components/publications";
+@import "components/menu";
 
 @import "custom";

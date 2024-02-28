@@ -5,6 +5,8 @@
     {{ partial "head.html" . }}
 <body>
     <div class="content">
+        {{ partial "_menu.html" $data }}
+
         {{ partial "_profile.html" $data }}
         {{ partial "_summary.html" $data }}
 

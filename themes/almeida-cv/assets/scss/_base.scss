@@ -21,6 +21,7 @@ body{
 }
 
 .content {
+    position: relative;
     background-color: $color-light;
    
     @media screen {
