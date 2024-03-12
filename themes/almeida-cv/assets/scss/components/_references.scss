@@ -31,7 +31,7 @@
     &__relation {
         text-align: left;
         width: 100%;
-        color: $color-dark;
+        color: $color-text;
     }
 
     &__contact {
@@ -39,7 +39,6 @@
         font-size: 1rem;
 
         & > i {
-            background-color: $color-icon-background;
             color: $color-icon-primary;
             font-size: 1rem;
             text-align: center;

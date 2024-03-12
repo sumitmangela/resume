@@ -12,16 +12,14 @@ title = 'Sumit Mangela | Resume'
 
 [params]
 enableMetaTags = false
+
 colorLight = "#fff"
-colorDark = "#666"
+colorText = "#666"
 colorPageBackground = "#ddd"
-colorPrimary = "#e3bfb8"
+colorPrimary = "#eba9a9"
+colorTextPrimary = "#d47575"
+colorIconPrimary = "#e1a0a0"
 colorSecondary = "#aaa"
-colorIconPrimary = "#e3bfb8"
-colorIconBackground = "#e3bfb8"
-colorRightColumnBackground = "#f5f5f5"
-colorRightColumnHeadingText = "#666"
-colorRightColumnBodyText = "#666"
-colorRightColumnIconPrimary = "#e3bfb8"
-colorRightColumnIconBackground = "#e3bfb8"
+
+
 pages = 2

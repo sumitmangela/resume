@@ -94,7 +94,7 @@
     // }
 
     &__company {
-        color: $color-dark;
+        color: $color-text;
     }
 
     &__company__timeline{
@@ -103,13 +103,13 @@
     }
 
     &__position {
-        color: $color-dark;
+        color: $color-text;
         font-weight: 500;
     }
 
     &__date,
     &__place {
-        color: $color-secondary;
+        color: $color-text;
         // font-weight: 500;
         // font-size: 1.2rem;
     }
@@ -117,7 +117,7 @@
     &__place {
         &::before {
             font-family: 'Material Icons';
-            color: $color-icon-background;
+            color: $color-icon-primary;
             font-size: 1.1rem;
             content: 'place';
             display: inline-block;
@@ -147,7 +147,6 @@
         font-size: 0.9rem;
         font-weight: 400;
         display: inline-block;
-        background-color: $color-icon-background;
         color: $color-icon-primary;
         border-radius: 1rem;
         padding: 0.1rem 0.6rem;

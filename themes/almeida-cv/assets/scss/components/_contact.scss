@@ -16,17 +16,17 @@
         min-width: calc(33% - 5px);
         margin-bottom: 10px;
         margin-right: 5px;
-
+        color: $color-text-primary;
         & > i {
-            color: $color-right-col-icon-primary;
             font-size: 1.7rem;
             margin-right: 0.5rem;
+            color: $color-icon-primary;
         }
     }
 
     &__link {
         text-decoration: none;
-        color: $color-dark;
+        color: $color-text-primary;
         &:hover{
             text-decoration: underline;
         }
