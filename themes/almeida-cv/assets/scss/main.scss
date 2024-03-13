@@ -1,6 +1,7 @@
 $color-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
 $color-text: {{ .Site.Params.colorText | default "#666"}} !default;
 $color-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
+$color-page-background-secondary: {{ .Site.Params.colorPageBackgroundSecondary | default "#ddd" }} !default;
 
 $color-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
 $color-text-primary: {{ .Site.Params.colorTextPrimary | default "#e3bfb8"}} !default;

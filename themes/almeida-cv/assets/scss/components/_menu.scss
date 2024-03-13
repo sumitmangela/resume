@@ -7,7 +7,7 @@
     ul{
         list-style: none;
         padding: 5px;
-        background: #eaeaea;
+        background: $color-page-background-secondary;
         border-radius: 0px 0px 0px 5px; 
 
         li{
@@ -19,11 +19,12 @@
             }
 
             &:hover{
-                background: #fbfbfb;
+                background: $color-light;
+                color: $color-text-primary;
             }
 
             &:not(:last-child){
-                border-bottom: 1px solid #aaa;
+                border-bottom: 1px solid $color-secondary;
             }
         }
     }
@@ -33,7 +34,7 @@
         #menuButon{
             font-size: 20px;
             padding: 6px 10px;
-            background: #eaeaea;
+            background: $color-page-background-secondary;
             border-radius: 0px 0px 8px 8px;
             cursor: pointer;
         }

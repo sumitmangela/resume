@@ -16,9 +16,10 @@ enableMetaTags = false
 colorLight = "#fff"
 colorText = "#666"
 colorPageBackground = "#ddd"
-colorPrimary = "#eba9a9"
-colorTextPrimary = "#d47575"
-colorIconPrimary = "#e1a0a0"
+colorPageBackgroundSecondary = "#eaeaea"
+colorPrimary = "#ebada9"
+colorTextPrimary = "#d47a75"
+colorIconPrimary = "#e1a1a0"
 colorSecondary = "#aaa"
 
 
