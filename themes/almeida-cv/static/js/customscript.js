@@ -6,3 +6,8 @@ function onMenuClick(){
     button.classList.toggle('fa-angles-down');
     button.classList.toggle('fa-angles-up');
 }
+
+function onModeToggle(){
+    var body = document.querySelector('body');
+    body.classList.toggle('dark-mode');
+}

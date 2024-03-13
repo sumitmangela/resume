@@ -22,5 +22,13 @@ colorTextPrimary = "#d47a75"
 colorIconPrimary = "#e1a1a0"
 colorSecondary = "#aaa"
 
+colorLightDark = "#3d3c3f"
+colorTextDark = "#666"
+colorPageBackgroundDark = "#ddd"
+colorPageBackgroundSecondaryDark = "#eaeaea"
+colorPrimaryDark = "#ebada9"
+colorTextPrimaryDark = "#d47a75"
+colorIconPrimaryDark = "#e1a1a0"
+colorSecondaryDark = "#aaa"
 
 pages = 2

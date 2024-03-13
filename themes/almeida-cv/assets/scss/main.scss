@@ -1,16 +1,79 @@
-$color-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
-$color-text: {{ .Site.Params.colorText | default "#666"}} !default;
-$color-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
-$color-page-background-secondary: {{ .Site.Params.colorPageBackgroundSecondary | default "#ddd" }} !default;
+// $color-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
+// $color-text: {{ .Site.Params.colorText | default "#666"}} !default;
+// $color-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
+// $color-page-background-secondary: {{ .Site.Params.colorPageBackgroundSecondary | default "#ddd" }} !default;
 
-$color-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
-$color-text-primary: {{ .Site.Params.colorTextPrimary | default "#e3bfb8"}} !default;
+// $color-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
+// $color-text-primary: {{ .Site.Params.colorTextPrimary | default "#e3bfb8"}} !default;
 
-$color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
+// $color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
 
-$color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
+// $color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
 
 $pages: {{ .Site.Params.pages | default 1}} !default;
+
+$colorPrimary : {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
+$colorLight: {{ .Site.Params.colorLight | default "#fff"}} !default;
+$colorText: {{ .Site.Params.colorText | default "#666"}} !default;
+$colorPageBackground: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
+$colorPageBackgroundSecondary: {{ .Site.Params.colorPageBackgroundSecondary | default "#ddd" }} !default;
+$colorTextPrimary: {{ .Site.Params.colorTextPrimary | default "#e3bfb8"}} !default;
+$colorSecondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
+$colorIconPrimary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
+
+$colorPrimaryDark : {{ .Site.Params.colorPrimaryDark | default "#e3bfb8"}} !default;
+$colorLightDark: {{ .Site.Params.colorLightDark | default "#fff"}} !default;
+$colorTextDark: {{ .Site.Params.colorTextDark | default "#666"}} !default;
+$colorPageBackgroundDark: {{ .Site.Params.colorPageBackgroundDark | default "#ddd" }} !default;
+$colorPageBackgroundSecondaryDark: {{ .Site.Params.colorPageBackgroundSecondaryDark | default "#ddd" }} !default;
+$colorTextPrimaryDark: {{ .Site.Params.colorTextPrimaryDark | default "#e3bfb8"}} !default;
+$colorSecondaryDark: {{ .Site.Params.colorSecondaryDark | default "#aaa"}} !default;
+$colorIconPrimaryDark: {{ .Site.Params.colorIconPrimaryDark | default "#fff"}} !default;
+
+
+$color-primary: var(--color-primary);
+$color-light: var(--color-light);
+$color-text: var(--color-text);
+$color-page-background: var(--color-page-background);
+$color-page-background-secondary: var(--color-page-background-secondary);
+$color-text-primary: var(--color-text-primary);
+$color-secondary: var(--color-secondary);
+$color-icon-primary: var(--color-icon-primary);
+
+body{
+  --color-primary:  #{$colorPrimary};
+  --color-light:  #{$colorLight};
+  --color-page-background:  #{$colorPageBackground};
+  --color-text:  #{$colorText};
+  --color-page-background-secondary:  #{$colorPageBackgroundSecondary};
+  --color-text-primary:  #{$colorTextPrimary};
+  --color-secondary:  #{$colorSecondary};
+  --color-icon-primary:  #{$colorIconPrimary};
+}
+body.dark-mode{
+  --color-primary:  #{$colorPrimaryDark};
+  --color-light:  #{$colorLightDark};
+  --color-page-background:  #{$colorPageBackgroundDark};
+  --color-text:  #{$colorTextDark};
+  --color-page-background-secondary:  #{$colorPageBackgroundSecondaryDark};
+  --color-text-primary:  #{$colorTextPrimaryDark};
+  --color-secondary:  #{$colorSecondaryDark};
+  --color-icon-primary:  #{$colorIconPrimaryDark};
+}
+
+@media print {
+  body, body.dark-mode{
+    --color-primary:  #{$colorPrimary};
+    --color-light:  #{$colorLight};
+    --color-page-background:  #{$colorPageBackground};
+    --color-text:  #{$colorText};
+    --color-page-background-secondary:  #{$colorPageBackgroundSecondary};
+    --color-text-primary:  #{$colorTextPrimary};
+    --color-secondary:  #{$colorSecondary};
+    --color-icon-primary:  #{$colorIconPrimary};
+  }  
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
