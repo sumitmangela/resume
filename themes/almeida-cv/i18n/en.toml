@@ -1,8 +1,11 @@
-[profile]
-other = "Profile"
+[summary]
+other = "Summary"
 
 [experience]
 other = "Experience"
+
+[totalExperience]
+other = "Total Work Experience"
 
 [education]
 other = "Education"
@@ -16,8 +19,8 @@ other = "Skills"
 [languages]
 other = "Languages"
 
-[diplomas]
-other = "Diplomas"
+[publications]
+other = "Personal Projects and Publications"
 
 [interests]
-other = "Interests"
+other = "Hobbies and Interests"

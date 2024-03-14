@@ -1,10 +1,15 @@
 {{ if .Profile }}
-<div id="profile" class="section">
-    <div class="section__heading">
-        <h2 class="section__title">{{ i18n "profile" }}</h2>
+    <div class="profile section">
+        <div class="profile__container">
+            {{ if .Profile.Photo }}
+            <img class="profile__img" src="{{ .Profile.Photo }}" alt="photo of me">
+            {{ end }}
+            <div class="profile__details">
+                <h1 class="mainHeading">{{ .Profile.FirstName }} <span>{{ .Profile.LastName }}</span></h1>
+                <h2 class="subHeading"> {{ .Profile.Line }} </h2>
+
+                {{ partial "_contacts.html" . }}
+            </div>
+        </div>
     </div>
-    <div class="section__content">
-        <p>{{ .Profile | safeHTML | emojify }}</p>
-    </div>
-</div>
 {{ end }}

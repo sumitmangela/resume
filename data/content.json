@@ -1,0 +1,243 @@
+{
+    "Date": "2024-01-30",
+    "Profile": {
+      "FirstName": "Sumit",
+      "LastName": "Mangela",
+      "Photo": "img/avatar.jpg",
+      "Line": "Software Developer",
+      "Contacts": [
+        {
+          "Icon": "fa-solid fa-phone",
+          "Info": "+91 9975934619"
+        },
+        {
+          "Icon": "fa-regular fa-envelope",
+          "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"mailto:sumitmangela@gmail.com\">sumitmangela@gmail.com</a>"
+        },
+        {
+          "Icon": "fa-solid fa-location-dot",
+          "Info": "Mumbai, India"
+        }
+      ],
+      "ProfContacs": [
+        {
+          "Icon": "fa-brands fa-github",
+          "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"https://github.com/sumitmangela\">github.com/sumitmangela</a>"
+        },
+        {
+          "Icon": "fa-brands fa-linkedin",
+          "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"https://linkedin.com/in/sumit-mangela\">linkedin.com/in/sumit-mangela</a>"
+        }
+      ]
+    },
+    "Summary": "Experienced software developer adept at crafting dynamic and responsive web applications. Proficient in both front end and back end technologies, with a comprehensive understanding of the full software development lifecycle. Equally adept at excelling within collaborative team dynamics and independent work settings. Dedicated to staying updated on emerging technologies and best practices to drive innovation and exceed project goals.",
+    "ExperienceFrom":"2017-08-01",
+    "Experience": [
+      {
+        "Employer": "Blackstraw.ai",
+        "From": "2019-06-24",
+        "To": "",
+        "Positions": [
+          {
+            "Title": "Senior Software Developer",
+            "From": "2023-10-02",
+            "To": "",
+            "Location": "Mumbai, India | Remote"
+          },
+          {
+            "Title": "Software Developer",
+            "From": "2020-11-02",
+            "To": "2023-10-01",
+            "Location": "Mumbai, India | Remote"
+          },
+          {
+            "Title": "Front End Developer",
+            "From": "2019-06-16",
+            "To": "2020-11-01",
+            "Location": "Mumbai, India"
+          }
+        ]
+      },
+      {
+        "Employer": "GS Tecknoserve Pvt. Ltd.",
+        "From": "2017-08-01",
+        "To": "2019-06-15",
+        "Positions": [
+          {
+            "Title": "Front End Developer/ UI Developer",
+            "From": "2017-08-01",
+            "To": "2019-06-15",
+            "Location": "Mumbai, India"
+          }
+        ]
+      }
+    ],
+    "Education": [
+      {
+        "Course": "Bachelor of Engineering in Computer Science",
+        "Place": "University of Mumbai",
+        "Date": "June 2013 - May 2017"
+      }
+    ],
+    "Skills": [
+      {
+        "Family": "Front End Development",
+        "Details": [
+          "As I have worked primarily as a Front End Developer most of my career, I am very proficient in using front-end frameworks mainly Angular to develop scalable and maintainable single-page applications.",
+          "Proficient in modern JavaScript (ES6+) as well as Typescript, with a strong understanding of its latest features and best practices.",
+          "Knowledgeable in creating responsive and mobile-friendly web pages, CSS preprocessors like SASS/SCSS and using libraries like Material, Bootstrap."
+        ],
+        "Items": [
+          "Angular",
+          "React",
+          "Javascript",
+          "Typescript",
+          "RxJs",
+          "HTML",
+          "CSS",
+          "SASS/SCSS",
+          "Material",
+          "Bootstrap",
+          "Hugo",
+          "Nunjucks"
+        ]
+      },
+      {
+        "Family": "Back End Development",
+        "Details": [
+          "Moderately proficient in Node.js, with experience developing server-side applications and APIs. As well as some experience in developing APIs in Python (Flask).",
+          "Modereatly experienced in using both SQL and NoSQL database technologies."
+        ],
+        "Items": [
+          "NodeJs",
+          "NextJs",
+          "Puppeteer",
+          "Python",
+          "Flask",
+          "Postgres",
+          "SQL",
+          "MongoDB",
+          "Gulp"
+        ]
+      },
+      {
+        "Family": "Developer Tools",
+        "Details": [
+          "Highly proficient in using version control systems like Git as well as SVNs for collaborative development and code management.",
+          "Experienced in using Jira for creating and prioritizing user stories and tasks, and tracking progress through agile boards.",
+          "Familiar with many developer tools like Citrix, WinSCP, Figma, DBeaver and many more."
+        ],
+        "Items": [
+          "Git",
+          "BitBucket",
+          "Github",
+          "TortoiseSVN",
+          "Jira",
+          "ChatGPT",
+          "DBeaver",
+          "WinSCP",
+          "Citrix",
+          "Docker",
+          "ActiveMQ",
+          "Figma",
+          "Adobe XD"
+        ]
+      }
+    ],
+    "Publications": [
+      {
+       "Name": "<b>Email Template Engine: </b> Nunjucks based templating application which uses Gulp to quickly generate email templates with features like using scss for styling, customizable layouts, dynamic variables and data insertion, live server for development",
+       "Link": "https://github.com/sumitmangela/email-template-engine"
+      },
+      {
+        "Name": "<b>HTML Screenshots Automation: </b> Puppeteer based node js script that helps in automation of taking screenshots of either local HTML files or list of websites.",
+        "Link": "https://github.com/sumitmangela/html-screenshots-automation"
+      },
+      {
+        "Name": "<b>Photoshop Art Timelapse: </b> Node script which uses cron job and photoshop jsx script to save a screenshot of the photo/art at given interval of time. So later these screenshots can be combined into a time-lapse.",
+        "Link": "https://github.com/sumitmangela/photoshop-art-timelapse"
+      },
+      {
+        "Name": "<b>CSS Responsive Fluid Typography: </b> Published in Level Up Coding (Medium)",
+        "Link": "https://levelup.gitconnected.com/css-responsive-fluid-typography-a23a9aab19a"
+      }
+    ],
+    "Interests": [
+      {
+        "Name": "Photography",
+        "Link": ["https://unsplash.com/@sumitmangela", "https://www.instagram.com/sumit_mangela/"]
+       },
+       {
+         "Name": "Digital Art",
+         "Link": ["https://www.deviantart.com/sumitmangela", "https://www.instagram.com/art.sumit_mangela/"]
+       },
+       {
+         "Name": "Travel"
+       },
+       {
+         "Name": "Video Games"
+       },
+       {
+        "Name": "Movies and TV Shows"
+       },
+       {
+        "Name": "Anime"
+       },
+       {
+        "Name": "Books"
+       }
+    ],
+    "Languages": [
+      {
+        "Name": "English"
+      },
+      {
+        "Name": "Hindi"
+      },
+      {
+        "Name": "Marathi"
+      },
+      {
+        "Name": "Japenese"
+      }
+    ],
+    "References": [
+      {
+        "Name": "Person One",
+        "Relation": "Co-worker at Super Cool Company",
+        "Contacts": [
+          {
+            "Icon": "fas fa-phone",
+            "Info": "+44 123 456 790"
+          },
+          {
+            "Icon": "fas fa-envelope",
+            "Info": "contact@person-one.com"
+          },
+          {
+            "Icon": "fas fa-map-marker-alt",
+            "Info": "Melbourne, Australia"
+          }
+        ]
+      },
+      {
+        "Name": "Person Two",
+        "Relation": "Boss at Super Cool Company",
+        "Contacts": [
+          {
+            "Icon": "fas fa-phone",
+            "Info": "+44 123 456 791"
+          },
+          {
+            "Icon": "fas fa-envelope",
+            "Info": "contact@person-two.com"
+          },
+          {
+            "Icon": "fas fa-map-marker-alt",
+            "Info": "Sydney, Australia"
+          }
+        ]
+      }
+    ]
+
+  }

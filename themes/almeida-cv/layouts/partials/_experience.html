@@ -4,8 +4,15 @@
         <h2 class="section__title">{{ i18n "experience" }}</h2>
     </div>
     <div class="section__content">
+        {{ if .ExperienceFrom }}
+        <h3 class="total__experience">
+            {{ i18n "totalExperience" }}: 
+            <span class="total__experience__timeline">{{ partial "_timeline.html" (dict "from" .ExperienceFrom "to" "" "hideDetails" true) }} </span>
+        </h3>
+        {{ end }}
         <div class="experience">
             {{ range .Experience }}
+
             {{ if .Class }}
             <div class="experience__item {{ .Class }}">
             {{ else }}
@@ -13,32 +20,40 @@
             {{ end }}
                 <div class="experience__header">
                     <h3 class="experience__company">
+
                         {{ .Employer | safeHTML }}
+
                     </h3>
-                    <h3 class="experience__place">{{ .Place | safeHTML }}</h3>
+                    <h4 class="experience__company__timeline">
+                        {{ partial "_timeline.html" (dict "from" .From "to" .To "hideDetails" true) }}
+                    </h4>
                 </div>
-                {{ range .Positions }}
-                <div class="experience__job">
-                    <div class="experience__subheader">
-                        <h3 class="experience__position">
-                            {{ .Title | safeHTML}}
-                        </h3>
-                        <h3 class="experience__date">{{ .Date | safeHTML }}</h3>
-                    </div>
-                    <ul>
-                        {{ range .Details }}
-                        <li class="experience__bullet">{{ . | safeHTML }}</li>
+                {{ if .Positions }}
+                    <ul class="experience__job__list">
+                        {{ range .Positions }}
+                        <li class="experience__job">
+                            <span class="experience__job__disc"></span>
+                            <h3 class="experience__position">
+                                {{ .Title | safeHTML}}
+                            </h3>
+                            <h4 class="experience__date">
+                                {{ partial "_timeline.html" (dict "from" .From "to" .To) }}
+                            </h4>
+
+                            <h4 class="experience__place">{{ .Location | safeHTML }}</h4>
+                            {{ if .Details }}
+                                <ul class="experience__list">
+                                    {{ range .Details }}
+                                    <li class="experience__bullet">{{ .Desc | safeHTML }}</li>
+                                    {{ end }}
+                                </ul>
+                            {{ end }}
+
+                        </li>
                         {{ end }}
                     </ul>
-                    <div class="experience__badges">
-                        <ul>
-                            {{ range .Badges }}
-                            <li class="experience__badge">{{ . }}</li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
                 {{ end }}
+                
             </div>
             {{ end }}
         </div>

@@ -1,81 +1,124 @@
-.experience {
-    &__extra_padding {
-        padding-top: 4rem !important;
+.total__experience{
+    // font-size: 1.7rem;
+    // margin: 10px 0px;
+    font-weight: 400;
+
+    &__timeline {
+        font-weight: 600;
     }
 
+}
+
+.experience {
+    margin-left: 20px;
     &__item {
         display: block;
         position: relative;
-        @include avoid-break;
         &:not(:first-child) {
             padding-top: 1.5rem;
         }
         margin-bottom: 10px;
         margin-top: 10px;
 
-        &::before {
-            content: "";
-            height: 90%;
-            width: 1.5px;
-            position: absolute;
-            background: linear-gradient($color-page-background, rgba(255, 255, 255, 0));
-            //background: linear-gradient(blue, red);
-            margin-top: 25px;
+        // &::before {
+        //     content: "";
+        //     height: 90%;
+        //     width: 1.5px;
+        //     position: absolute;
+        //     background: linear-gradient($color-page-background, rgba(255, 255, 255, 0));
+        //     //background: linear-gradient(blue, red);
+        //     margin-top: 25px;
+        // }
+
+        &:not(:first-child) {
+            &::before {
+                top: 0;
+                content: "";
+                height: 1px;
+                position: absolute;
+                left: 0;
+                width: 90%;
+                background:  $color-secondary;
+            }
         }
+ 
     }
 
-    &__header,
-    &__subheader {
+    &__header {
         display: flex;
         width: 100%;
-        height: 2.4rem;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    &__job__list{
+        list-style-type: none;   
+        margin-left: 5px;
+    }
+    &__job__disc{
+        position: relative;
+        display: block;
+        border-radius: 50%;
+        background-color: $color-secondary;
+        margin-bottom: calc(0.8rem * -1);
+        height: 0.6rem;
+        width: 0.6rem;
+        top: 0.7rem;
+        left: -2rem;
     }
 
     &__job {
-        position: relative;
-        transition: transform 0.2s cubic-bezier($cubic);
+        margin-left: 20px;
         margin-bottom: 2rem;
+        position: relative;
 
-        &:hover {
-            transform: translateX(0.5rem);
+        &:not(:last-child) {
+            &::before{
+                content: "";
+                position: absolute;
+                left: -1.8rem;
+                top: 2rem;
+                height: calc(100%);
+                width: 2px;
+                background-color: $color-secondary;
+            }
         }
+
     }
 
-    &__company,
-    &__position {
-        text-align: left;
-        width: 70%;
-        float: left;
-    }
+    // &__company,
+    // &__position {
+    //     text-align: left;
+    //     width: 70%;
+    //     float: left;
+    // }
 
     &__company {
-        color: $color-dark;
+        color: $color-text;
+    }
+
+    &__company__timeline{
+        // font-weight: 500;
+        font-size: 1.2rem;
     }
 
     &__position {
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        color: $color-dark;
-        margin-left: 1rem;
+        color: $color-text;
+        font-weight: 500;
     }
 
     &__date,
     &__place {
-        float: right;
-        text-align: right;
-        width: 30%;
-        color: $color-secondary;
-    }
-
-    &__date {
-        font-weight: 400;
+        color: $color-text;
+        // font-weight: 500;
+        // font-size: 1.2rem;
     }
 
     &__place {
         &::before {
             font-family: 'Material Icons';
-            color: $color-icon-background;
-            font-size: 1.4rem;
+            color: $color-icon-primary;
+            font-size: 1.1rem;
             content: 'place';
             display: inline-block;
             padding-right: 3px;
@@ -83,10 +126,14 @@
             font-weight: 900;
         }
     }
+    
+    &__list{
+        margin-top: 5px;
+    }
 
     &__bullet {
-        list-style: square inside;
-        margin-left: 1rem;
+        list-style: disc inside;
+        // margin-left: 1rem;
     }
 
     &__badges {
@@ -100,7 +147,6 @@
         font-size: 0.9rem;
         font-weight: 400;
         display: inline-block;
-        background-color: $color-icon-background;
         color: $color-icon-primary;
         border-radius: 1rem;
         padding: 0.1rem 0.6rem;

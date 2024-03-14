@@ -1,28 +1,46 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7;
     font-size: 1.12rem;
-    color: $color-dark;
+    color: $color-text;
 }
 
 .mainHeading {
     text-transform: uppercase;
     font-size: 5rem;
     color: $color-secondary;
+    line-height: 59px;
 
     & span {
         color: $color-primary;
     }
 }
 
+.subHeading{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: $color-secondary;
+    font-weight: 500;
+}
+
 .section__title {
     font-size: 2.1rem;
-    color: $color-dark;
+    color: $color-text;
+    margin-bottom: 0.2rem; 
 }
 
 h1,
 h2 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+h4{
+    font-size: 1.12rem;
+    font-weight: 400;
 }

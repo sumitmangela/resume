@@ -1,21 +1,28 @@
 {{ if .Skills }}
-<div class="sideSection">
-    <div class="sideSection__heading">
-        <h2 class="sideSection__title">{{ i18n "skills" }}</h2>
+<div id="skills" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">{{ i18n "skills" }}</h2>
     </div>
-    <div class="sideSection__content">
+    <div class="section__content">
         <ul class="skills">
+            {{ range .Skills }}
             <li>
-                {{ range .Skills }}
-                <ul class="skills__group">
-                    <span>{{ .Family | safeHTML }}</span>
-                    <br>
-                    {{ range .Items }}
+                <h3>{{ .Family | safeHTML }}</h3>
+
+                <ul class="skills__details">
+                    {{ range .Details }}
                     <li>{{ . | safeHTML }}</li>
                     {{ end }}
                 </ul>
-                {{ end }}
+                <ul class="skills__group">
+                
+                    {{ range .Items }}
+                    <li> <span>{{ . | safeHTML }}</span></li>
+                    {{ end }}
+                </ul>
+               
             </li>
+            {{ end }}
         </ul>
     </div>
 </div>

@@ -7,7 +7,12 @@
 }
 
 html {
-    font-size: 62.5%;
+    // font-size: 62.5%;
+    font-size: 12px;
+}
+
+body{
+    overflow-x: hidden;
     background-color: $color-page-background;
 
     @media print {
@@ -16,21 +21,36 @@ html {
 }
 
 .content {
-    // A4 paper
-    width: $page-width;
-    min-height: paper_height($page-width);
+    position: relative;
     background-color: $color-light;
-
-    @media screen and (min-width: 60rem) {
-        margin: 6rem 0;
-        @include shadow(1);
-        @include hz-center;
+   
+    @media screen {
+        margin: auto;
+        max-width: $site-max-width;
     }
     @media print {
         margin: 0;
+        width: $page-width;
         height: paper_height($page-width) * $pages;
     }
 }
+
+// .content {
+//     // A4 paper
+//     width: $page-width;
+//     min-height: paper_height($page-width);
+//     background-color: $color-light;
+
+//     @media screen and (min-width: 60rem) {
+//         margin: 6rem 0;
+//         @include shadow(1);
+//         @include hz-center;
+//     }
+//     @media print {
+//         margin: 0;
+//         height: paper_height($page-width) * $pages;
+//     }
+// }
 
 body {
     box-sizing: border-box;
@@ -42,9 +62,14 @@ body {
         margin: 0;
         size: A4;
     }
+    * {
+        -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+        color-adjust: exact !important;                 /* Firefox 48 – 96 */
+        print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+    }
 }
 
-::selection {
-    color: $color-light;
-    background-color: darken(rgba($color-primary, 0.6), 10%);
-}
+// ::selection {
+//     color: $color-light;
+//     background-color: darken(rgba($color-primary, 0.6), 10%);
+// }

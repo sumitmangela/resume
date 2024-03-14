@@ -1,4 +1,34 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'almeida-cv'
+languageCode = "en-us"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+enableEmoji = true
+
+theme = "almeida-cv"
+disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
+
+baseURL = "https://example.com/"
+title = 'Sumit Mangela | Resume'
+#googleAnalytics = ""
+
+[params]
+enableMetaTags = false
+
+colorLight = "#fff"
+colorText = "#666"
+colorPageBackground = "#ddd"
+colorPageBackgroundSecondary = "#eaeaea"
+colorPrimary = "#ebada9"
+colorTextPrimary = "#d47a75"
+colorIconPrimary = "#e1a1a0"
+colorSecondary = "#aaa"
+
+colorLightDark = "#222831"
+colorTextDark = "#d4d4d4"
+colorPageBackgroundDark = "#17191d"
+colorPageBackgroundSecondaryDark = "#424a59"
+colorPrimaryDark = "#d47a75"
+colorTextPrimaryDark = "#d47a75"
+colorIconPrimaryDark = "#d47a75"
+colorSecondaryDark = "#aaa"
+
+pages = 2

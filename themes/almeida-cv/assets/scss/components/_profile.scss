@@ -1,0 +1,43 @@
+.profile {
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__img {
+        width: auto;
+        height: 225px;
+        border-radius: 50%;
+    }
+
+    &__details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2rem;
+    }
+
+    @media only screen and (max-width: 800px){
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__img {
+            width: 100px;
+            height: auto;
+        }
+    
+        &__details{
+            padding-left: 0rem;
+            align-items: center;
+
+            .mainHeading{
+                font-size: 3rem;
+            }
+            .subHeading{
+                font-size: 2rem;
+            }
+        }
+    }
+}

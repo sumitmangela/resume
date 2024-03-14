@@ -1,0 +1,9 @@
+@media print {
+    .pagebreak {
+        clear: both;
+        page-break-after: always;
+    }
+    .pagebreak-padding{
+        padding-top: 3rem;
+    }
+}
