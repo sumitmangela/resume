@@ -11,7 +11,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <script src="https://kit.fontawesome.com/3e5f97c447.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen,print" />
-    <script defer language="javascript" type="text/javascript"  src="/js/customscript.js"></script>
+    <!-- <script defer language="javascript" type="text/javascript"  src="/js/customscript.js"></script> -->
+
+    <script>
+                
+        function onMenuClick(){
+            var menu = document.getElementById('menu');
+            var button = document.getElementById('menuButon');
+            menu.classList.toggle('open');
+            button.classList.toggle('fa-angles-down');
+            button.classList.toggle('fa-angles-up');
+        }
+
+        function onModeToggle(){
+            var body = document.querySelector('body');
+            body.classList.toggle('dark-mode');
+        }
+    </script>
 
     {{ if .Site.Params.enableMetaTags }}
         <meta property="og:title" content="{{ .Site.Title }}" />
