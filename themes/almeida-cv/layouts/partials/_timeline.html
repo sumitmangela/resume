@@ -27,12 +27,18 @@
 {{ end }}
 
 <span class="timeline__diff">
-    {{ if gt $years 0 }}
-        {{ $years }} {{ $measure_year }}
-    {{ end }}
-
-    {{ if gt $months 0 }}
-        {{ $months }} {{ $measure_month }}
+    {{ if eq .to "" }}
+        <span class="current_date"> {{ .from }} </span>
+    {{ else }}
+        <span>
+            {{ if gt $years 0 }}
+                {{ $years }} {{ $measure_year }}
+            {{ end }}
+        
+            {{ if gt $months 0 }}
+                {{ $months }} {{ $measure_month }}
+            {{ end }}
+        </span>
     {{ end }}
 </span>
 

@@ -30,5 +30,31 @@
         {{ partial "_print.html" $data }}
         </div>
     </div>
+    <script>
+           //updating current date differnce
+           var dateElements = document.getElementsByClassName("current_date");
+
+            // Loop through each date element
+            for (var i = 0; i < dateElements.length; i++) {
+                currentDate = dateElements[i].innerHTML;
+                d1 = new Date();               
+                d2 = new Date(currentDate);             
+                dy = d1.getYear()  - d2.getYear();
+                dm = d1.getMonth() - d2.getMonth();
+                dd = d1.getDate()  - d2.getDate();
+
+                if (dd < 0) { dm -= 1; dd += 30; }
+                if (dm < 0) { dy -= 1; dm += 12; }
+
+                dateDifference = ""
+                if(dy){
+                    dateDifference += dy +' '+ (dy > 1 ? 'years':'year')
+                }
+                if(dm){
+                    dateDifference += ' '+ dm +' '+ (dm > 1 ? 'months':'month')
+                }
+                dateElements[i].innerHTML = dateDifference;
+            }
+    </script>
 </body>
 </html>
