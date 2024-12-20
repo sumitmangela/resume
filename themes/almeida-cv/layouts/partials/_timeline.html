@@ -25,10 +25,11 @@
     <span class="timeline__detail">
         {{ $from_detail }} - {{ $to_detail }}
     </span>
-    · 
+    <!-- ·  -->
 {{ end }}
 
-{{ if ne $fraction true }}
+ <!-- {{/* 
+{{ if or (ne $fraction true) (ne $showDetails true) }}
 <span class="timeline__diff">
     {{ if eq .to "" }}
         <span class="current_date"> {{ .from }} </span>
@@ -45,6 +46,8 @@
     {{ end }}
 </span>
 {{ end }}
+
+ */}} -->
 
 {{ if eq $fraction true }}
 <span class="timeline__diff">

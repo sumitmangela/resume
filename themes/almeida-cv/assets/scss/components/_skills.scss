@@ -1,5 +1,16 @@
 .skills {
-    list-style: none;
+    // list-style: none;
+    padding-left: 20px;
+
+    &__block{
+        margin-bottom: 10px;
+    }
+    &__item{
+        // color: $color-text-primary;
+        &:not(:last-child)::after{
+            content: ", "
+        }
+    }
 
     &__details{
         margin-left: 15px; 

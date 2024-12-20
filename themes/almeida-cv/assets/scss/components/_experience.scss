@@ -8,9 +8,35 @@
     }
 
 }
+.experience_section{
+    margin-left: 0px;
+}
 
 .experience {
-    margin-left: 20px;
+
+    // margin-left: 20px;
+
+    .container{
+        display: flex;
+        margin-bottom: 20px;
+        .left-container{
+            width: 150px;
+            .timeline__detail{
+                font-size: 1.15rem;
+            }
+        }
+        .right-container{
+            flex: 1;
+
+            .position{
+                font-weight: 600;
+            }
+
+            ul{
+                padding-left: 20px;
+            }
+        }
+    }
     &__item {
         display: block;
         position: relative;
