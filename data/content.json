@@ -7,16 +7,16 @@
       "Line": "Software Developer",
       "Contacts": [
         {
+          "Icon": "fa-solid fa-location-dot",
+          "Info": "Mumbai, India"
+        },
+        {
           "Icon": "fa-solid fa-phone",
           "Info": "+91 9975934619"
         },
         {
           "Icon": "fa-regular fa-envelope",
           "Info": "<a class=\"contact__link\"  target=\"_blank\" href=\"mailto:sumitmangela@gmail.com\">sumitmangela@gmail.com</a>"
-        },
-        {
-          "Icon": "fa-solid fa-location-dot",
-          "Info": "Mumbai, India"
         }
       ],
       "ProfContacs": [
@@ -30,9 +30,54 @@
         }
       ]
     },
-    "Summary": "Experienced software developer adept at crafting dynamic and responsive web applications. Proficient in both front end and back end technologies, with a comprehensive understanding of the full software development lifecycle. Equally adept at excelling within collaborative team dynamics and independent work settings. Dedicated to staying updated on emerging technologies and best practices to drive innovation and exceed project goals.",
+    "Summary": [
+      "of professional experience in a fast-paced, collaborative environment as a software developer, specializing in creating dynamic, user-focused, responsive web applications.",
+      "Proficient in front-end development, specializing in responsive, user-friendly interfaces that enhance user experience and meet modern web standards.",
+      "Skilled in leveraging Angular, JavaScript, TypeScript, HTML, SASS/SCSS, RxJs and Angular Material to craft robust, scalable, and highly interactive web solutions."
+    ],
     "ExperienceFrom":"2017-08-01",
     "Experience": [
+      {
+        "From": "2019-06-24",
+        "To": "",
+        "Position": "Senior Software Developer, Blackstraw.ai",
+        "Details":[
+          "Lead Development and maintenance of multiple dynamic, single-page applications (SPAs) using Angular.",
+          "Worked on projects utilizing various Angular versions, from Angular 7 to the latest",
+          "Designed and implemented reusable component libraries, reducing development time across multiple projects.",
+          "Enhanced application performance by optimizing Angular Change Detection, implementing lazy loading, virtual scroll and route guards.",
+          "Used RxJS for managing asynchronous data streams and state in Angular applications.",
+          "Implemented reactive forms to handle complex user inputs and validations"
+        ],
+        "DetailsAfterPageBreak":[
+          "Utilized Angular Material or Bootstrap for responsive and consistent UI designs",
+          "Configured Commitizen and cz-conventional-changelog to standardize commit messages and automate build versioning for the project",
+          "Integrated Angular tree library to implement UI for a complex lazy loading tree strucutre.",
+          "Used tools like Postman and Swagger to test and validate API endpoints during development and troubleshooting.",
+          "Handled authentication by implementing token-based authorization (JWT) for secure API communication.",
+          "Collaborated with cross-functional teams including backend developers, UX/UI designers, and QA engineers.",
+          "Participated in Agile development processes: sprint planning, daily stand-ups, and retrospectives.",
+          "Maintained project documentation to ensure smooth onboarding of new team members and collaboration across teams.",
+          "Used Git for version control and tools like Jira to organize tasks, track progress, and streamline workflows in agile development environments.",
+          "Mentored junior developers and conducted knowledge-sharing sessions to improve team skills in Angular and modern web development practices."
+        ]
+      },
+      {
+        "From": "2017-08-01",
+        "To": "2019-06-15",
+        "Position": "Front End Developer/ UI Developer, GS Tecknoserve Pvt. Ltd.",
+        "Details":[
+          "Worked with senior developers to build dynamic and interactive web applications using AngularJs and Angular 2.",
+          "Collaborated with the design team to implement UI/UX elements based on wireframes and design prototypes.",
+          "Worked on maintaining CMS and E-Commerce websites for clients.",
+          "Worked with CSS preprocessors like SASS/SCSS to write more maintainable and scalable stylesheets.",
+          "Extensively worked on RESTful web services integration",
+          "Integrated third-party APIs to enhance functionality, such as social media feeds",
+          "Debugged and fixed issues using browser developer tools to troubleshoot HTML, CSS, and JavaScript errors."
+        ]
+      }
+    ],
+    "OLD_Experience": [
       {
         "Employer": "Blackstraw.ai",
         "From": "2019-06-24",
@@ -76,71 +121,58 @@
       {
         "Course": "Bachelor of Engineering in Computer Science",
         "Place": "University of Mumbai",
-        "Date": "June 2013 - May 2017"
+        "Date": "Jun 2013 - May 2017"
       }
     ],
     "Skills": [
       {
-        "Family": "Front End Development",
-        "Details": [
-          "As I have worked primarily as a Front End Developer most of my career, I am very proficient in using front-end frameworks mainly Angular to develop scalable and maintainable single-page applications.",
-          "Proficient in modern JavaScript (ES6+) as well as Typescript, with a strong understanding of its latest features and best practices.",
-          "Knowledgeable in creating responsive and mobile-friendly web pages, CSS preprocessors like SASS/SCSS and using libraries like Material, Bootstrap."
-        ],
+        "Family": "Web Technologies",
         "Items": [
           "Angular",
-          "React",
-          "Javascript",
+          "Javascript (ES6+)",
           "Typescript",
           "RxJs",
           "HTML",
           "CSS",
           "SASS/SCSS",
-          "Material",
-          "Bootstrap",
+          "NodeJs",
+          "MySQL",
+          "MongoDB",
           "Hugo",
           "Nunjucks"
         ]
       },
       {
-        "Family": "Back End Development",
-        "Details": [
-          "Moderately proficient in Node.js, with experience developing server-side applications and APIs. As well as some experience in developing APIs in Python (Flask).",
-          "Modereatly experienced in using both SQL and NoSQL database technologies."
-        ],
+        "Family": "Libraries",
         "Items": [
-          "NodeJs",
-          "NextJs",
-          "Puppeteer",
-          "Python",
-          "Flask",
-          "Postgres",
-          "SQL",
-          "MongoDB",
-          "Gulp"
+          "Angular Material",
+          "Angular Tree Component",
+          "Bootstrap",
+          "moment.js"
         ]
       },
       {
-        "Family": "Developer Tools",
-        "Details": [
-          "Highly proficient in using version control systems like Git as well as SVNs for collaborative development and code management.",
-          "Experienced in using Jira for creating and prioritizing user stories and tasks, and tracking progress through agile boards.",
-          "Familiar with many developer tools like Citrix, WinSCP, Figma, DBeaver and many more."
-        ],
+        "Family": "Version Control",
         "Items": [
           "Git",
           "BitBucket",
           "Github",
-          "TortoiseSVN",
+          "TortoiseSVN"
+        ]
+      },
+      {
+        "Family": "Developer Tools",
+        "Items": [
           "Jira",
+          "VS Code",
           "ChatGPT",
+          "Postman",
+          "Swagger",
           "DBeaver",
           "WinSCP",
           "Citrix",
-          "Docker",
-          "ActiveMQ",
-          "Figma",
-          "Adobe XD"
+           "Gulp",
+           "Puppeteer"
         ]
       }
     ],
@@ -172,19 +204,17 @@
          "Link": ["https://www.deviantart.com/sumitmangela", "https://www.instagram.com/art.sumit_mangela/"]
        },
        {
-         "Name": "Travel"
+         "Name": "Travel, Anime, Video Games, Movies, TV Shows, Books"
+       }
+    ],
+    "Links": [
+      {
+        "Name": "Linkedin",
+        "Link": ["https://www.linkedin.com/in/sumit-mangela/"]
        },
        {
-         "Name": "Video Games"
-       },
-       {
-        "Name": "Movies and TV Shows"
-       },
-       {
-        "Name": "Anime"
-       },
-       {
-        "Name": "Books"
+         "Name": "Github",
+         "Link": ["https://github.com/sumitmangela"]
        }
     ],
     "Languages": [

@@ -10,21 +10,26 @@
         {{ partial "_profile.html" $data }}
         {{ partial "_summary.html" $data }}
 
-        <div class="content_column">
+        {{ partial "_skills.html" $data }}
+
+        {{ partial "_experience.html" $data }}
+
+        <!-- <div class="content_column">
             <div class="content_column__left">
                 {{ partial "_skills.html" $data }}
             </div>
             <div class="content_column__right">
                 {{ partial "_experience.html" $data }}
             </div>
-        </div>
+        </div> -->
 
         {{ partial "_education.html" $data }}
 
         <!-- manually introduce pagebreak for printing -->
-        {{ partial "_pagebreak.html" $data }}
+        <!-- {{ partial "_pagebreak.html" $data }} -->
 
         {{ partial "_publications.html" $data }}
+        {{ partial "_links.html" $data }}
         {{ partial "_interests.html" $data }}
 
         {{ partial "_print.html" $data }}

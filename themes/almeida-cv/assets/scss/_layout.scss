@@ -1,5 +1,5 @@
 .content {
-    padding: 3rem 3rem;
+    padding: 5rem 10rem;
 
     .content_column{
         display: flex;
@@ -29,6 +29,8 @@
     }
     
     @media only screen and (max-width: 800px){
+        padding: 3rem 3rem;
+        
         .content_column{
             flex-direction: column;
             &__left {

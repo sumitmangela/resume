@@ -1,10 +1,24 @@
+
+{{ $from := .ExperienceFrom  }}
+
 {{ if .Summary }}
-<div id="profile" class="section">
+<div id="summary" class="section">
     <div class="section__heading">
         <h2 class="section__title">{{ i18n "summary" }}</h2>
     </div>
     <div class="section__content">
-        <p>{{ .Summary | safeHTML | emojify }}</p>
+      
+        <ul class="summary__list">
+            {{ range $index, $item := .Summary }}
+            <li>
+                {{ if eq $index 0 }}
+                    <span class="total__experience__timeline">{{ partial "_timeline.html" (dict "from" $from "to" "" "hideDetails" true "fraction" true) }} </span>
+                {{ end }}
+                
+                {{ $item | safeHTML }}
+            </li>
+            {{ end }}
+        </ul>
     </div>
 </div>
 {{ end }}

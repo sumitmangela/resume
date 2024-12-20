@@ -7,19 +7,26 @@
         <ul class="skills">
             {{ range .Skills }}
             <li>
-                <h3>{{ .Family | safeHTML }}</h3>
+                <b>{{ .Family | safeHTML }} </b>
+                <div class="skills__block">
+                    {{ range .Items }}
+                     <span class="skills__item">{{ . | safeHTML }}</span>
+                    {{ end }}
+                </div>
+                
+                <!-- <h3>{{ .Family | safeHTML }}</h3> -->
 
-                <ul class="skills__details">
+                <!-- <ul class="skills__details">
                     {{ range .Details }}
                     <li>{{ . | safeHTML }}</li>
                     {{ end }}
-                </ul>
-                <ul class="skills__group">
+                </ul> -->
+                <!-- <ul class="skills__group">
                 
                     {{ range .Items }}
                     <li> <span>{{ . | safeHTML }}</span></li>
                     {{ end }}
-                </ul>
+                </ul> -->
                
             </li>
             {{ end }}

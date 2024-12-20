@@ -3,22 +3,16 @@
     <div class="contact__list">
         {{ range .Profile.Contacts }}
         <div class="contact__item">
-            <i class="{{ .Icon }}"></i><span>{{ .Info | safeHTML }}</span>
+            <!-- <i class="{{ .Icon }}"></i> -->
+            <span>{{ .Info | safeHTML }}</span>
         </div>
         {{ end }}
-        {{ range .Profile.ProfContacs }}
+        <!-- {{ range .Profile.ProfContacs }}
         <div class="contact__item">
             <i class="{{ .Icon }}"></i><span>{{ .Info | safeHTML }}</span>
         </div>
-        {{ end }}
+        {{ end }} -->
     </div>
 
-    <!-- <div class="contact__list">
-        {{ range .Profile.ProfContacs }}
-        <div class="contact__item">
-            <i class="{{ .Icon }}"></i><span>{{ .Info | safeHTML }}</span>
-        </div>
-        {{ end }}
-    </div> -->
 </div>
 {{ end }}

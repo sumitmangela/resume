@@ -3,13 +3,50 @@
     <div class="section__heading">
         <h2 class="section__title">{{ i18n "experience" }}</h2>
     </div>
-    <div class="section__content">
+    <div class="section__content experience_section">
+        <div class="experience">
+            {{ range .Experience }}
+                <div class="container">
+                    <div class="left-container">
+                        <div class="timeline">
+                            {{ partial "_timeline.html" (dict "from" .From "to" .To) }}
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <div class="position">
+                            {{ .Position | safeHTML }}
+                        </div>
+                        <ul class="details">
+                            {{ range .Details }}
+                            <li> {{ . | safeHTML}} </li>
+                            {{ end }}
+                        </ul>
+                        {{ if .DetailsAfterPageBreak }}
+                        {{ partial "_pagebreak.html"  }}
+                        <ul class="details">
+                            {{ range .DetailsAfterPageBreak }}
+                            <li> {{ . | safeHTML}} </li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
+
+                       
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+
+
+        <!-- {{/* 
+      
         {{ if .ExperienceFrom }}
         <h3 class="total__experience">
             {{ i18n "totalExperience" }}: 
-            <span class="total__experience__timeline">{{ partial "_timeline.html" (dict "from" .ExperienceFrom "to" "" "hideDetails" true) }} </span>
+            <span class="total__experience__timeline">{{ partial "_timeline.html" (dict "from" .ExperienceFrom "to" "" "hideDetails" true "fraction" true) }} </span>
         </h3>
         {{ end }}
+
+
         <div class="experience">
             {{ range .Experience }}
 
@@ -57,6 +94,7 @@
             </div>
             {{ end }}
         </div>
-    </div>
+        </div>
+        */}} -->
 </div>
 {{ end }}
