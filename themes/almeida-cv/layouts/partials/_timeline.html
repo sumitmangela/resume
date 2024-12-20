@@ -1,5 +1,6 @@
 
 {{ $hideDetails := cond (eq .hideDetails true ) true false }}
+{{ $fraction := cond (eq .fraction true ) true false }}
 
 {{ $from := .from | time }}
 {{ $to := cond (eq .to "" ) time.Now .to | time }}
@@ -12,9 +13,10 @@
 
 
 {{ $diff := $to.Sub $from }}
-{{ $tmonths:= mul ($to.Sub $from).Hours 0.00139 }}
+{{ $tmonths:= mul ($to.Sub $from).Hours 0.00136 }}
 {{ $months := mod $tmonths 12 }}
 {{ $years := math.Floor (div $tmonths 12)}}
+{{ $years_fraction := printf "%.1f" (div $tmonths 12)}}
 
 {{ $measure_year := cond (eq 1 $years) "year" "years" }}
 {{ $measure_month := cond (eq 1 $months) "month" "months" }}
@@ -26,6 +28,7 @@
     · 
 {{ end }}
 
+{{ if ne $fraction true }}
 <span class="timeline__diff">
     {{ if eq .to "" }}
         <span class="current_date"> {{ .from }} </span>
@@ -41,4 +44,12 @@
         </span>
     {{ end }}
 </span>
+{{ end }}
 
+{{ if eq $fraction true }}
+<span class="timeline__diff">
+    {{ if gt $years 0 }}
+        {{ $years_fraction }} {{ $measure_year }}
+    {{ end }}
+</span>
+{{ end }}

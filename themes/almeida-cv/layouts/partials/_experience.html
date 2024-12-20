@@ -7,7 +7,7 @@
         {{ if .ExperienceFrom }}
         <h3 class="total__experience">
             {{ i18n "totalExperience" }}: 
-            <span class="total__experience__timeline">{{ partial "_timeline.html" (dict "from" .ExperienceFrom "to" "" "hideDetails" true) }} </span>
+            <span class="total__experience__timeline">{{ partial "_timeline.html" (dict "from" .ExperienceFrom "to" "" "hideDetails" true "fraction" true) }} </span>
         </h3>
         {{ end }}
         <div class="experience">

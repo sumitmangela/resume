@@ -30,7 +30,11 @@
         }
       ]
     },
-    "Summary": "Experienced software developer adept at crafting dynamic and responsive web applications. Proficient in both front end and back end technologies, with a comprehensive understanding of the full software development lifecycle. Equally adept at excelling within collaborative team dynamics and independent work settings. Dedicated to staying updated on emerging technologies and best practices to drive innovation and exceed project goals.",
+    "Summary": [
+      "5.7 years of professional experience in a fast-paced, collaborative environment as a software developer, specializing in creating dynamic, user-focused, responsive web applications.",
+      "Proficient in front-end development, specializing in responsive, user-friendly interfaces that enhance user experience and meet modern web standards.",
+      "Skilled in leveraging Angular, JavaScript, TypeScript, HTML, SASS/SCSS, RxJs and Angular Material to craft robust, scalable, and highly interactive web solutions."
+    ],
     "ExperienceFrom":"2017-08-01",
     "Experience": [
       {
@@ -81,66 +85,49 @@
     ],
     "Skills": [
       {
-        "Family": "Front End Development",
-        "Details": [
-          "As I have worked primarily as a Front End Developer most of my career, I am very proficient in using front-end frameworks mainly Angular to develop scalable and maintainable single-page applications.",
-          "Proficient in modern JavaScript (ES6+) as well as Typescript, with a strong understanding of its latest features and best practices.",
-          "Knowledgeable in creating responsive and mobile-friendly web pages, CSS preprocessors like SASS/SCSS and using libraries like Material, Bootstrap."
-        ],
+        "Family": "Web Technologies",
         "Items": [
           "Angular",
-          "React",
-          "Javascript",
+          "Javascript (ES6+)",
           "Typescript",
           "RxJs",
           "HTML",
           "CSS",
           "SASS/SCSS",
-          "Material",
-          "Bootstrap",
+          "NodeJs",
+          "MySQL",
+          "MongoDB",
           "Hugo",
           "Nunjucks"
         ]
       },
       {
-        "Family": "Back End Development",
-        "Details": [
-          "Moderately proficient in Node.js, with experience developing server-side applications and APIs. As well as some experience in developing APIs in Python (Flask).",
-          "Modereatly experienced in using both SQL and NoSQL database technologies."
-        ],
+        "Family": "Libraries",
         "Items": [
-          "NodeJs",
-          "NextJs",
-          "Puppeteer",
-          "Python",
-          "Flask",
-          "Postgres",
-          "SQL",
-          "MongoDB",
-          "Gulp"
+          "Angular Material",
+          "Angular-tree-component",
+          "Bootstrap"
         ]
       },
       {
-        "Family": "Developer Tools",
-        "Details": [
-          "Highly proficient in using version control systems like Git as well as SVNs for collaborative development and code management.",
-          "Experienced in using Jira for creating and prioritizing user stories and tasks, and tracking progress through agile boards.",
-          "Familiar with many developer tools like Citrix, WinSCP, Figma, DBeaver and many more."
-        ],
+        "Family": "Version Control",
         "Items": [
           "Git",
           "BitBucket",
           "Github",
-          "TortoiseSVN",
+          "TortoiseSVN"
+        ]
+      },
+      {
+        "Family": "Developer Tools",
+        "Items": [
           "Jira",
           "ChatGPT",
           "DBeaver",
           "WinSCP",
           "Citrix",
-          "Docker",
-          "ActiveMQ",
-          "Figma",
-          "Adobe XD"
+           "Gulp",
+           "Puppeteer"
         ]
       }
     ],
