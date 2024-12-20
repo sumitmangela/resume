@@ -15,6 +15,20 @@
             </li>
             {{ end }}
         </ul>
+        {{ if .PublicationsAfterPageBreak }}
+        {{ partial "_pagebreak.html"  }}
+        <ul class="publications__list">
+            {{ range .PublicationsAfterPageBreak }}
+            <li>
+                {{ .Name | safeHTML }}
+                <br/>
+                {{ if .Link }}
+                    <a class="contact__link" target="_blank" href="{{ .Link }}" >{{ .Link }}</a>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
     </div>
 </div>
 {{ end }}

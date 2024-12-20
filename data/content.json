@@ -184,7 +184,9 @@
       {
         "Name": "<b>HTML Screenshots Automation: </b> Puppeteer based node js script that helps in automation of taking screenshots of either local HTML files or list of websites.",
         "Link": "https://github.com/sumitmangela/html-screenshots-automation"
-      },
+      }
+    ],
+    "PublicationsAfterPageBreak": [
       {
         "Name": "<b>Photoshop Art Timelapse: </b> Node script which uses cron job and photoshop jsx script to save a screenshot of the photo/art at given interval of time. So later these screenshots can be combined into a time-lapse.",
         "Link": "https://github.com/sumitmangela/photoshop-art-timelapse"

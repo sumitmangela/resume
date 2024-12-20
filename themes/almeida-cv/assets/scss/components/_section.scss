@@ -34,4 +34,10 @@
         //     border-color: $color-primary;
         // }
     }
+    
+    @media only screen and (max-width: 800px){
+        &__content{
+            margin-left: 0px;
+        }
+    }
 }
