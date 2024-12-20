@@ -204,19 +204,17 @@
          "Link": ["https://www.deviantart.com/sumitmangela", "https://www.instagram.com/art.sumit_mangela/"]
        },
        {
-         "Name": "Travel"
+         "Name": "Travel, Anime, Video Games, Movies, TV Shows, Books"
+       }
+    ],
+    "Links": [
+      {
+        "Name": "Linkedin",
+        "Link": ["https://www.linkedin.com/in/sumit-mangela/"]
        },
        {
-         "Name": "Video Games"
-       },
-       {
-        "Name": "Movies and TV Shows"
-       },
-       {
-        "Name": "Anime"
-       },
-       {
-        "Name": "Books"
+         "Name": "Github",
+         "Link": ["https://github.com/sumitmangela"]
        }
     ],
     "Languages": [

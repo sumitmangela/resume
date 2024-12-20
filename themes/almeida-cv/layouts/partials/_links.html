@@ -1,0 +1,22 @@
+{{ if .Links }}
+<div id="links" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">{{ i18n "links" }}</h2>
+    </div>
+    <div class="section__content">
+        <ul class="links">
+            {{ range .Links }}
+            <li  class="links__item">
+                <div class="links__item__title">{{ .Name | safeHTML }}</div> 
+ 
+                {{ if .Link }}
+                    {{ range .Link }}
+                    <a class="contact__link" target="_blank" href="{{ . }}" >{{ . }}</a> <br/>
+                    {{ end }}
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}
