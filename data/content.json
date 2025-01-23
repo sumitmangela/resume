@@ -33,7 +33,7 @@
     "Summary": [
       "of professional experience in a fast-paced, collaborative environment as a software developer, specializing in creating dynamic, user-focused, responsive web applications.",
       "Proficient in front-end development, specializing in responsive, user-friendly interfaces that enhance user experience and meet modern web standards.",
-      "Skilled in leveraging Angular, JavaScript, TypeScript, HTML, SASS/SCSS, RxJs and Angular Material to craft robust, scalable, and highly interactive web solutions."
+      "Skilled in leveraging Angular, React, JavaScript, TypeScript, HTML, SASS/SCSS, RxJs, Redux, NgRx to craft robust, scalable, and highly interactive web solutions."
     ],
     "ExperienceFrom":"2017-08-01",
     "Experience": [
@@ -42,17 +42,18 @@
         "To": "",
         "Position": "Senior Software Developer, Blackstraw.ai",
         "Details":[
-          "Lead Development and maintenance of multiple dynamic, single-page applications (SPAs) using Angular.",
-          "Worked on projects utilizing various Angular versions, from Angular 7 to the latest",
+          "Lead Development and maintenance of multiple dynamic, single-page applications (SPAs).",
+          "Worked on projects utilizing various UI frameworks such as Angular and React.",
           "Designed and implemented reusable component libraries, reducing development time across multiple projects.",
           "Enhanced application performance by optimizing Angular Change Detection, implementing lazy loading, virtual scroll and route guards.",
           "Used RxJS for managing asynchronous data streams and state in Angular applications.",
+          "Utilized state management libraries, such as Redux and NgRx, to manage state effectively in complex applications.",
           "Implemented reactive forms to handle complex user inputs and validations"
         ],
         "DetailsAfterPageBreak":[
+          "Worked with both REST and GraphQL APIs to efficiently handle data retrieval, updates, and integration with the UI.",
           "Utilized Angular Material or Bootstrap for responsive and consistent UI designs",
           "Configured Commitizen and cz-conventional-changelog to standardize commit messages and automate build versioning for the project",
-          "Integrated Angular tree library to implement UI for a complex lazy loading tree strucutre.",
           "Used tools like Postman and Swagger to test and validate API endpoints during development and troubleshooting.",
           "Handled authentication by implementing token-based authorization (JWT) for secure API communication.",
           "Collaborated with cross-functional teams including backend developers, UX/UI designers, and QA engineers.",
@@ -129,15 +130,18 @@
         "Family": "Web Technologies",
         "Items": [
           "Angular",
+          "React",
           "Javascript (ES6+)",
           "Typescript",
-          "React",
           "RxJs",
           "Redux ",
+          "NgRx",
           "HTML",
           "CSS",
           "SASS/SCSS",
           "NodeJs",
+          "REST",
+          "GraphQL",
           "MySQL",
           "MongoDB",
           "Hugo",
@@ -148,7 +152,8 @@
         "Family": "Libraries",
         "Items": [
           "Angular Material",
-          "Angular Tree Component",
+          "Jest",
+          "Jasmine",
           "Bootstrap",
           "moment.js"
         ]
