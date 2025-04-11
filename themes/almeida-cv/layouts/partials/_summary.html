@@ -1,6 +1,8 @@
 
 {{ $from := .ExperienceFrom  }}
 
+{{ $exp := partial "_timeline.html" (dict "from" $from "to" "" "hideDetails" true "fraction" true)  }}
+
 {{ if .Summary }}
 <div id="summary" class="section">
     <div class="section__heading">
@@ -11,11 +13,13 @@
         <ul class="summary__list">
             {{ range $index, $item := .Summary }}
             <li>
-                {{ if eq $index 0 }}
-                    <span class="total__experience__timeline">{{ partial "_timeline.html" (dict "from" $from "to" "" "hideDetails" true "fraction" true) }} </span>
-                {{ end }}
+                <!-- {{ if eq $index 0 }}
+                    <span class="total__experience__timeline">{{ $exp }} </span>
+                {{ end }} -->
+
+                {{ replace $item "[X]" (printf "<span class=\"total__experience__timeline\">%s</span>" $exp) | safeHTML }}
                 
-                {{ $item | safeHTML }}
+                <!-- {{ $item | safeHTML }} -->
             </li>
             {{ end }}
         </ul>

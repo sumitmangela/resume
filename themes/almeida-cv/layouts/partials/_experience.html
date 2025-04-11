@@ -4,37 +4,45 @@
         <h2 class="section__title">{{ i18n "experience" }}</h2>
     </div>
     <div class="section__content experience_section">
-        <div class="experience">
+        <div class="company">
             {{ range .Experience }}
-                <div class="container">
-                    <div class="left-container">
-                        <div class="timeline">
-                            {{ partial "_timeline.html" (dict "from" .From "to" .To) }}
-                        </div>
-                    </div>
-                    <div class="right-container">
-                        <div class="position">
-                            {{ .Position | safeHTML }}
-                        </div>
-                        <ul class="details">
-                            {{ range .Details }}
-                            <li> {{ . | safeHTML}} </li>
-                            {{ end }}
-                        </ul>
-                        {{ if .DetailsAfterPageBreak }}
-                        {{ partial "_pagebreak.html"  }}
-                        <ul class="details">
-                            {{ range .DetailsAfterPageBreak }}
-                            <li> {{ . | safeHTML}} </li>
-                            {{ end }}
-                        </ul>
-                        {{ end }}
 
-                       
+            {{ $emp := .Employer  }}
+
+            <div class="experience">
+                {{ range .Positions }}
+                    <div class="container">
+                        <div class="left-container">
+                            <div class="timeline">
+                                {{ partial "_timeline.html" (dict "from" .From "to" .To) }}
+                            </div>
+                        </div>
+                        <div class="right-container">
+                            <div class="position">
+                                {{ .Title | safeHTML }},  {{ $emp | safeHTML }}
+                            </div>
+                            <ul class="details">
+                                {{ range .Details }}
+                                <li> {{ . | safeHTML}} </li>
+                                {{ end }}
+                            </ul>
+                            {{ if .DetailsAfterPageBreak }}
+                            {{ partial "_pagebreak.html"  }}
+                            <ul class="details">
+                                {{ range .DetailsAfterPageBreak }}
+                                <li> {{ . | safeHTML}} </li>
+                                {{ end }}
+                            </ul>
+                            {{ end }}
+    
+                           
+                        </div>
                     </div>
-                </div>
+                {{ end }}
+            </div>
             {{ end }}
         </div>
+       
 
 
         <!-- {{/* 
