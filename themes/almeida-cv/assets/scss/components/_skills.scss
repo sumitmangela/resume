@@ -7,8 +7,20 @@
     }
     &__item{
         // color: $color-text-primary;
-        &:not(:last-child)::after{
-            content: ", "
+        // &:not(:last-child)::after{
+        //     content: ", "
+        // }
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 5px;
+        padding: 3px 7px;
+        background: $color-pallet;
+        color:$color-pallet-text;
+        border-radius: 7px;
+        display: inline-block;
+
+        &:hover{
+            background: $color-pallet-hover;
         }
     }
 

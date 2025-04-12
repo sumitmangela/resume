@@ -52,16 +52,15 @@
               "Mentored junior developers, providing guidance on best practices and problem-solving techniques",
               "Contributed to architectural decisions, ensuring scalability, security, and performance across all platforms.",
               "Conducted in-depth code reviews and provided constructive feedback to improve code quality and team efficiency."
-            ]
+            ],
+            "NeedPageBreak":true
           },
           {
             "Title": "Software Developer",
             "From": "2020-11-02",
             "To": "2023-10-01",
             "Details": [
-              "Collaborated with cross-functional teams including backend developers, UX/UI designers, and QA engineers."
-            ],
-            "DetailsAfterPageBreak":[
+              "Collaborated with cross-functional teams including backend developers, UX/UI designers, and QA engineers.",
               "Participated in Agile development processes: sprint planning, daily stand-ups, and retrospectives.",
               "Worked with both REST and GraphQL APIs to efficiently handle data retrieval, updates, and integration with the UI.",
               "Utilized state management libraries, such as Redux and NgRx, to manage state effectively in complex applications.",
