@@ -3,7 +3,7 @@
     "Profile": {
       "FirstName": "Sumit",
       "LastName": "Mangela",
-      "Photo": "img/avatar.jpg",
+      "Photo": "img/avatar.png",
       "Line": "Software Developer",
       "Contacts": [
         {
@@ -31,12 +31,83 @@
       ]
     },
     "Summary": [
-      "of professional experience in a fast-paced, collaborative environment as a software developer, specializing in creating dynamic, user-focused, responsive web applications.",
-      "Proficient in front-end development, specializing in responsive, user-friendly interfaces that enhance user experience and meet modern web standards.",
-      "Skilled in leveraging Angular, React, JavaScript, TypeScript, HTML, SASS/SCSS, RxJs, Redux, NgRx to craft robust, scalable, and highly interactive web solutions."
-    ],
+      "Skilled Software Developer with [X] years of experience in designing, developing, and optimizing scalable applications.",
+      "Experienced in building both front-end and back-end solutions using JavaScript technologies like Angular, React, TypeScript and Node.js.",
+      "Adept at working with collaborative teams and leading projects to deliver quality solutions on time."
+      ],
     "ExperienceFrom":"2017-08-01",
     "Experience": [
+      {
+        "Employer": "Blackstraw.ai",
+        "From": "2019-06-24",
+        "To": "",
+        "Positions": [
+          {
+            "Title": "Senior Software Developer",
+            "From": "2023-10-02",
+            "To": "",
+            "Details": [
+              "Lead Development and maintenance of multiple dynamic, scalable products for various clients.",
+              "Developed and maintained high-quality, reusable code libraries reducing development time across multiple projects.",
+              "Mentored junior developers, providing guidance on best practices and problem-solving techniques",
+              "Contributed to architectural decisions, ensuring scalability, security, and performance across all platforms.",
+              "Conducted in-depth code reviews and provided constructive feedback to improve code quality and team efficiency."
+            ],
+            "NeedPageBreak":true
+          },
+          {
+            "Title": "Software Developer",
+            "From": "2020-11-02",
+            "To": "2023-10-01",
+            "Details": [
+              "Collaborated with cross-functional teams including backend developers, UX/UI designers, and QA engineers.",
+              "Participated in Agile development processes: sprint planning, daily stand-ups, and retrospectives.",
+              "Worked with both REST and GraphQL APIs to efficiently handle data retrieval, updates, and integration with the UI.",
+              "Utilized state management libraries, such as Redux and NgRx, to manage state effectively in complex applications.",
+              "Enhanced application performance by optimizing Angular Change Detection, implementing lazy loading, virtual scroll and route guards.",
+              "Handled authentication by implementing token-based authorization (JWT) for secure API communication.",
+              "Used tools like Postman and Swagger to test and validate API endpoints during development and troubleshooting.",
+              "Configured Commitizen and cz-conventional-changelog to standardize commit messages and automate build versioning for the project",
+              "Maintained project documentation to ensure smooth onboarding of new team members and collaboration across teams."
+            ]
+          },
+          {
+            "Title": "Front End Developer",
+            "From": "2019-06-16",
+            "To": "2020-11-01",
+            "Details": [
+              "Assisted in the design, development, and maintenance of web applications under the guidance of senior developers",
+              "Participated in code reviews, learning and applying best practices for software development",
+              "Contributed to writing clean, maintainable code using modern programming languages and frameworks.",
+              "Used Git for version control and tools like Jira to organize tasks, track progress, and streamline workflows in agile development environments.",
+              "Used RxJS for managing asynchronous data streams and state in Angular applications.",
+              "Utilized Angular Material or Bootstrap for responsive and consistent UI designs"
+            ]
+          }
+        ]
+      },
+      {
+        "Employer": "GS Tecknoserve Pvt. Ltd.",
+        "From": "2017-08-01",
+        "To": "2019-06-15",
+        "Positions": [
+          {
+            "Title": "Front End Developer/ UI Developer",
+            "From": "2017-08-01",
+            "To": "2019-06-15",
+            "Details": [
+              "Worked with senior developers to build dynamic and interactive web applications using AngularJs and Angular 2.",
+              "Collaborated with the design team to implement UI/UX elements based on wireframes and design prototypes.",
+              "Worked on maintaining CMS and E-Commerce websites for clients.",
+              "Worked with CSS preprocessors like SASS/SCSS to write more maintainable and scalable stylesheets.",
+              "Integrated third-party APIs to enhance functionality, such as social media feeds",
+              "Debugged and fixed issues using browser developer tools to troubleshoot HTML, CSS, and JavaScript errors."
+            ]
+          }
+        ]
+      }
+    ],
+    "bkp_Experience": [
       {
         "From": "2019-06-24",
         "To": "",
@@ -127,35 +198,27 @@
     ],
     "Skills": [
       {
-        "Family": "Web Technologies",
+        "Family": "Languages",
         "Items": [
-          "Angular",
-          "React",
           "Javascript (ES6+)",
-          "Typescript",
-          "RxJs",
-          "Redux ",
-          "NgRx",
+          "TypeScript",
+          "Python",
           "HTML",
-          "CSS",
-          "SASS/SCSS",
-          "NodeJs",
-          "REST",
-          "GraphQL",
-          "MySQL",
-          "MongoDB",
-          "Hugo",
-          "Nunjucks"
+          "CSS"
         ]
       },
       {
-        "Family": "Libraries",
+        "Family": "Frameworks/Libraries",
         "Items": [
-          "Angular Material",
-          "Jest",
-          "Jasmine",
-          "Bootstrap",
-          "moment.js"
+          "Angular",
+          "React",
+          "NodeJs",
+          "RxJs",
+          "Redux ",
+          "NgRx",
+          "SASS/SCSS",
+          "MySQL",
+          "MongoDB"
         ]
       },
       {
@@ -163,8 +226,7 @@
         "Items": [
           "Git",
           "BitBucket",
-          "Github",
-          "TortoiseSVN"
+          "Github"
         ]
       },
       {
@@ -172,14 +234,25 @@
         "Items": [
           "Jira",
           "VS Code",
-          "ChatGPT",
           "Postman",
+          "Jenkins",
           "Swagger",
           "DBeaver",
           "WinSCP",
-          "Citrix",
-           "Gulp",
-           "Puppeteer"
+          "ChatGPT"
+        ]
+      },
+      {
+        "Family": "Other",
+        "Items": [
+          "RESTful APIs",
+          "GraphQL",
+          "Agile Methodology",
+          "Unit Testing (Jest)",
+          "Hugo",
+          "Nunjucks",
+          "Gulp",
+          "Puppeteer"
         ]
       }
     ],
@@ -191,9 +264,7 @@
       {
         "Name": "<b>HTML Screenshots Automation: </b> Puppeteer based node js script that helps in automation of taking screenshots of either local HTML files or list of websites.",
         "Link": "https://github.com/sumitmangela/html-screenshots-automation"
-      }
-    ],
-    "PublicationsAfterPageBreak": [
+      },
       {
         "Name": "<b>Photoshop Art Timelapse: </b> Node script which uses cron job and photoshop jsx script to save a screenshot of the photo/art at given interval of time. So later these screenshots can be combined into a time-lapse.",
         "Link": "https://github.com/sumitmangela/photoshop-art-timelapse"
@@ -203,6 +274,7 @@
         "Link": "https://levelup.gitconnected.com/css-responsive-fluid-typography-a23a9aab19a"
       }
     ],
+    "PublicationsAfterPageBreak": [],
     "Interests": [
       {
         "Name": "Photography",

@@ -2,9 +2,10 @@
     // font-size: 1.7rem;
     // margin: 10px 0px;
     font-weight: 400;
-
+    
     &__timeline {
         font-weight: 600;
+        font-size: large;
     }
 
 }
@@ -13,12 +14,13 @@
 }
 
 .experience {
+    margin-bottom: 15px;
 
     // margin-left: 20px;
 
     .container{
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         .left-container{
             width: 150px;
             .timeline__detail{
@@ -39,9 +41,9 @@
     }
 
     @media only screen and (max-width: 800px){
-        .container{
-            flex-direction: column
-        }
+        // .container{
+        //     flex-direction: column
+        // }
     }
     &__item {
         display: block;

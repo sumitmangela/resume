@@ -31,6 +31,14 @@ $colorSecondaryDark: {{ .Site.Params.colorSecondaryDark | default "#aaa"}} !defa
 $colorIconPrimaryDark: {{ .Site.Params.colorIconPrimaryDark | default "#fff"}} !default;
 
 
+$colorPalletText: {{ .Site.Params.colorPalletText | default "#276ca9"}} !default;
+$colorPallet: {{ .Site.Params.colorPallet | default "#e7f4ff"}} !default;
+$colorPalletHover: {{ .Site.Params.colorPalletHover | default "#daeeff"}} !default;
+$colorPalletTextDark: {{ .Site.Params.colorPalletTextDark | default "#0e283e"}} !default;
+$colorPalletDark: {{ .Site.Params.colorPalletDark | default "#67a3d6"}} !default;
+$colorPalletHoverDark: {{ .Site.Params.colorPalletHoverDark | default "#4a85b7"}} !default;
+
+
 $color-primary: var(--color-primary);
 $color-light: var(--color-light);
 $color-text: var(--color-text);
@@ -39,6 +47,10 @@ $color-page-background-secondary: var(--color-page-background-secondary);
 $color-text-primary: var(--color-text-primary);
 $color-secondary: var(--color-secondary);
 $color-icon-primary: var(--color-icon-primary);
+
+$color-pallet-text: var(--color-pallet-text);
+$color-pallet: var(--color-pallet);
+$color-pallet-hover: var(--color-pallet-hover);
 
 body{
   --color-primary:  #{$colorPrimary};
@@ -49,6 +61,10 @@ body{
   --color-text-primary:  #{$colorTextPrimary};
   --color-secondary:  #{$colorSecondary};
   --color-icon-primary:  #{$colorIconPrimary};
+
+  --color-pallet-text:  #{$colorPalletText};
+  --color-pallet:  #{$colorPallet};
+  --color-pallet-hover:  #{$colorPalletHover};
 }
 body.dark-mode{
   --color-primary:  #{$colorPrimaryDark};
@@ -59,6 +75,10 @@ body.dark-mode{
   --color-text-primary:  #{$colorTextPrimaryDark};
   --color-secondary:  #{$colorSecondaryDark};
   --color-icon-primary:  #{$colorIconPrimaryDark};
+
+  --color-pallet-text:  #{$colorPalletTextDark};
+  --color-pallet:  #{$colorPalletDark};
+  --color-pallet-hover:  #{$colorPalletHoverDark};
 }
 
 @media print {
@@ -71,6 +91,10 @@ body.dark-mode{
     --color-text-primary:  #{$colorTextPrimary};
     --color-secondary:  #{$colorSecondary};
     --color-icon-primary:  #{$colorIconPrimary};
+
+    --color-pallet-text:  #{$colorPalletText};
+    --color-pallet:  #{$colorPallet};
+    --color-pallet-hover:  #{$colorPalletHover};
   }  
 }
 

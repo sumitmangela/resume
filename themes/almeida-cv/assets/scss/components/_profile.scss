@@ -7,8 +7,10 @@
 
     &__img {
         width: auto;
-        height: 160px;
-        border-radius: 50%;
+        height: 150px;
+        border-radius: 15%;
+        border: 4px solid $color-primary;
+        background: #daeeff
     }
 
     &__details{
@@ -19,7 +21,7 @@
 
         .mainHeading{
             margin-bottom: 1rem;
-            border-bottom: 1px solid;
+            border-bottom: 3px solid;
         }
     }
 
@@ -47,9 +49,9 @@
         }
     }
 
-    @media print {
-        &__img {
-           display: none;
-        }
-    }
+    // @media print {
+    //     &__img {
+    //        display: none;
+    //     }
+    // }
 }

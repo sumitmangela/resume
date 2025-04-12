@@ -24,6 +24,14 @@ colorRightColumnHeadingText = "#666"
 colorRightColumnBodyText = "#666"
 colorRightColumnIconPrimary = "#fff"
 colorRightColumnIconBackground = "#e3bfb8"
+colorPalletText = "#276ca9"
+colorPallet = "#e7f4ff"
+colorPalletHover = "#daeeff"
+colorPalletTextDark = "#0e283e"
+colorPalletDark = "#67a3d6"
+colorPalletHoverDark = "#4a85b7"
+
+
 pages = 1
 # Set this param to 'true' to swap the bar positions
 swapColumns = false
